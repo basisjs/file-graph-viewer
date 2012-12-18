@@ -1,0 +1,18 @@
+
+  HTML,
+  BODY
+  {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  BODY
+  {
+    color: black;
+    background: white;
+    font-family: verdana, serif;
+    font-size: small;
+    position: relative;
+  }

@@ -1,0 +1,11 @@
+
+  <b:resource src="fileStat.css" />
+
+  <div id="fileStat">
+    <div class="header">File type statistics</div>
+    <!--{childNodesHere}-->
+    <b:include src="type.tmpl">
+      <b:replace ref="type">all files</b:replace>
+      <b:replace ref="count">{totalCount}</b:replace>
+    </b:include>
+  </div>  

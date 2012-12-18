@@ -1,0 +1,10 @@
+
+  .details-file-list
+  {
+    display: none;
+  }
+
+  .details-file-list-hasChildren
+  {
+    display: block;
+  }

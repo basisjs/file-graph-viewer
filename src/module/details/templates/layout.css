@@ -1,0 +1,11 @@
+
+  #details-layout
+  {
+    display: none;
+    margin: 2em;
+  }
+
+  #details-layout.hasModel
+  {
+    display: block;
+  }

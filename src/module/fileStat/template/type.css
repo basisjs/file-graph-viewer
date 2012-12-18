@@ -1,0 +1,12 @@
+
+  .file-type
+  {
+    padding: .5em 0 0;
+    min-width: 120px;
+  }
+
+  .file-type-count
+  {
+    float: right;
+    margin-left: 2ex;
+  }
