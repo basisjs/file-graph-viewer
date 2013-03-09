@@ -1,0 +1,34 @@
+.graph-node
+{
+  stroke: white;
+  stroke-width: 2px;
+}
+
+.graph-node-html
+{
+  fill: #FF0000;
+}
+.graph-node-script
+{
+  fill: #99BBCC;
+}
+.graph-node-style
+{
+  fill: orange;
+}
+.graph-node-template
+{
+  fill: #88CC88;
+}
+.graph-node-l10n
+{
+  fill: rgb(100%, 90%, 50%);
+}
+.graph-node-image
+{
+  fill: rgb(60%, 90%, 100%);
+}
+.graph-node-json
+{
+  fill: gray;
+}
