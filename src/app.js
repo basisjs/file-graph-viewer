@@ -1,5 +1,7 @@
 
   basis.require('basis.ui');
+  basis.require('basis.ui.tree');
+  ;;;basis.require('basis.devpanel');
 
   var list = resource('module/list/view.js').fetch();
   var details = resource('module/details/view.js').fetch();
@@ -15,7 +17,7 @@
     new basis.ui.Node({
       container: document.body,
 
-      template: resource('templates/layout.tmpl'),
+      template: resource('app/templates/layout.tmpl'),
 
       binding: {
         list: 'satellite:',
@@ -44,7 +46,7 @@
 
     var canvas = details.element.parentNode.appendChild(basis.dom.createElement('div[style="position:absolute;width:100%;height:100%"]'));
 
-    var webglGraphics = Viva.Graph.View.webglGraphics();
+    //var webglGraphics = Viva.Graph.View.webglGraphics();
 
     var colors = {
       'html': '#FF0000',
@@ -57,27 +59,71 @@
     };
 
     var svgGraphics = Viva.Graph.View.svgGraphics();
+    window.xx = svgGraphics;
+    
+    var GraphNode = basis.ui.Node.subclass({
+      template: '<svg:circle r="8" stroke="white" stroke-width="2" fill="{color}" cx="{x}" cy="{y}"/>',
+      binding: {
+        color: {
+          events: 'update',
+          getter: function(node){
+            return colors[node.data ? node.data.type : 'unknown'] || 'black';
+          }
+        },
+        x: function(node){ return node.x && node.x.toFixed(4); },
+        y: function(node){ return node.y && node.y.toFixed(4); }
+      }
+    });
+
+    var GraphLink = basis.ui.Node.subclass({
+      template: '<svg:line stroke="rgba(128,128,128,.5)" stroke-width="2" x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" />',
+      binding: {
+        x1: function(node){ return node.x1 && node.x1.toFixed(4); },
+        y1: function(node){ return node.y1 && node.y1.toFixed(4); },
+        x2: function(node){ return node.x2 && node.x2.toFixed(4); },
+        y2: function(node){ return node.y2 && node.y2.toFixed(4); }
+      }
+    });
+
     svgGraphics
       .node(function(node){
-        var circle = Viva.Graph.svg('circle')
-          .attr('r', 7)
-          .attr('stroke', '#fff')
-          .attr('stroke-width', '1.5px')
-          .attr('fill', colors[node.data ? node.data.type : 'unknown'] || 'black');
+        //circle.append('title').text(node.id);
+        var file = app.files.File(node.id);
+        var uiNode = new GraphNode({
+          delegate: file
+        });
+
+        file.graphNode = uiNode;
+        uiNode.element.uiNode = uiNode;
             
-        circle.append('title').text(node.id);
-            
-        return circle;
+        return uiNode.element;
       })
-      .placeNode(function(uiNode, pos){
-        uiNode
-          .attr('cx', pos.x)
-          .attr('cy', pos.y); 
+      .placeNode(function(el, pos){
+        el.uiNode.x = pos.x;
+        el.uiNode.y = pos.y;
+        el.uiNode.updateBind('x');
+        el.uiNode.updateBind('y');
       })
       .link(function(link){
-        return Viva.Graph.svg('line')
-          .attr('stroke', 'rgba(128,128,128,.5)')
-          .attr('stroke-width', 2);
+        var fileLink = app.files.FileLink.get({ from: link.fromId, to: link.toId });
+        var uiNode = new GraphLink({
+          delegate: fileLink
+        });
+
+        fileLink.graphNode = uiNode;
+        uiNode.element.uiNode = uiNode;
+            
+        return uiNode.element;
+      })
+      .placeLink(function(el, pos1, pos2){
+        el.uiNode.x1 = pos1.x;
+        el.uiNode.y1 = pos1.y;
+        el.uiNode.x2 = pos2.x;
+        el.uiNode.y2 = pos2.y;
+        el.uiNode.updateBind('x1');
+        el.uiNode.updateBind('y1');
+        el.uiNode.updateBind('x2');
+        el.uiNode.updateBind('y2');
       });
 
 
