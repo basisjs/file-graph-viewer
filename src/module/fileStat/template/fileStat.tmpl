@@ -1,11 +1,12 @@
+<b:style src="fileStat.css" />
 
-  <b:resource src="fileStat.css" />
-
-  <div id="fileStat">
-    <div class="header">File type statistics</div>
-    <!--{childNodesHere}-->
-    <b:include src="type.tmpl">
-      <b:replace ref="type">all files</b:replace>
-      <b:replace ref="count">{totalCount}</b:replace>
-    </b:include>
-  </div>  
+<div class="file-stat file-stat-{noSelected}">
+  <div class="header">File type statistics</div>
+  <!--{childNodesHere}-->
+  <b:include src="type.tmpl">
+    <b:class value="file-type-all file-type-all-{noSelected}"/>
+    <b:set-attr name="event-click" value="resetSelection"/>
+    <b:replace ref="type">all files</b:replace>
+    <b:replace ref="count">{totalCount}</b:replace>
+  </b:include>
+</div>  

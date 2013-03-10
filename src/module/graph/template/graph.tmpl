@@ -1,3 +1,6 @@
-<svg:svg style="position: absolute; top: 0; left: 0; right: 0; bottom: 0">
+<b:style src="graph.css"/>
+<b:define name="hasSelected" type="bool"/>
+
+<svg:svg class="graph graph-{hasSelected} graph-{hasMatched}" event-click="resetSelection">
   <svg:g{childNodesElement|transformElement} buffered-rendering="dynamic" transform="{matrix}"/>
 </svg:svg>

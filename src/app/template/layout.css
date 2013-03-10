@@ -39,8 +39,7 @@
 
   #content
   {
-    overflow: auto;
-    overflow-y: scroll;
+    overflow: hidden;
     height: 100%;
     position: relative;
   }

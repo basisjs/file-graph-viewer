@@ -4,31 +4,53 @@
   stroke-width: 2px;
 }
 
-.graph-node-html
+.graph-node-html,
+.graph-hasMatched .graph-node-html.graph-node-matched
 {
   fill: #FF0000;
 }
-.graph-node-script
+.graph-node-script,
+.graph-hasMatched .graph-node-script.graph-node-matched
 {
   fill: #99BBCC;
 }
-.graph-node-style
+.graph-node-style,
+.graph-hasMatched .graph-node-style.graph-node-matched
 {
-  fill: orange;
+  fill: #FF69B4;
 }
-.graph-node-template
+.graph-node-template,
+.graph-hasMatched .graph-node-template.graph-node-matched
 {
   fill: #88CC88;
 }
-.graph-node-l10n
+.graph-node-l10n,
+.graph-hasMatched .graph-node-l10n.graph-node-matched
 {
-  fill: rgb(100%, 90%, 50%);
+  fill: orange;
 }
-.graph-node-image
+.graph-node-image,
+.graph-hasMatched .graph-node-image.graph-node-matched
 {
-  fill: rgb(60%, 90%, 100%);
+  fill: #87CEEB;
 }
-.graph-node-json
+.graph-node-json,
+.graph-hasMatched .graph-node-json.graph-node-matched
 {
   fill: gray;
+}
+.graph-node-font,
+.graph-hasMatched .graph-node-font.graph-node-matched
+{
+  fill: #4169E1;
+}
+
+.graph-hasSelected .graph-node,
+.graph-hasMatched .graph-node
+{
+  fill: #EEE;
+}
+.graph-hasSelected .graph-node-selected
+{
+  fill: red;
 }

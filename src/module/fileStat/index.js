@@ -8,20 +8,39 @@
   });
 
   var view = new basis.ui.Node({
+    dataSource: fileByType,
+
     template: resource('template/fileStat.tmpl'),
     binding: {
       totalCount: function(){
         return app.files.files.itemCount;
+      },
+      noSelected: 'selection.itemCount == 0'
+    },
+    action: {
+      resetSelection: function(){
+        this.selection.clear();
       }
     },
 
-    dataSource: fileByType,
+    listen: {
+      selection: {
+        datasetChanged: function(selection){
+          this.updateBind('noSelected');
+          app.files.matched.setSources(selection.getItems().map(function(node){
+            return node.delegate;
+          }));
+        }
+      }
+    },
+
+    selection: true,
     childClass: {
       template: resource('template/type.tmpl'),
       binding: {
         type: 'data:title',
         count: function(node){
-          return node.delegate ? node.delegate.itemCount : 0;
+          return node.delegate && node.delegate.itemCount;
         }
       },
       listen: {

@@ -1,12 +1,25 @@
+.file-type
+{
+  padding: .25em 1ex .4em;
+  margin: 0 -1ex 1px;
+  min-width: 120px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.file-type:hover
+{
+  background: #444;
+  background-color: rgba(0,0,0,.3);
+}
+.file-type_selected
+{
+  cursor: default;
+  background: #444;
+  background: rgba(0,0,0,.3);
+}
 
-  .file-type
-  {
-    padding: .5em 0 0;
-    min-width: 120px;
-  }
-
-  .file-type-count
-  {
-    float: right;
-    margin-left: 2ex;
-  }
+.file-type-count
+{
+  float: right;
+  margin-left: 2ex;
+}

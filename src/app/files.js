@@ -2,7 +2,7 @@
   basis.require('basis.entity');
   basis.require('basis.data.dataset');
 
-  var fileMap = resource('../data/file-map.docs.json').fetch();
+  var fileMap = resource('../data/file-map.json').fetch();
 
   var File = new basis.entity.EntityType({
     fields: {
@@ -19,7 +19,8 @@
         calc: basis.entity.CalculateField('filename', function(filename){
           return (filename || '').split(/\//).pop();
         })
-      }
+      },
+      matched: Boolean
     }
   });
 
@@ -58,12 +59,12 @@
     });
   });
 
-  var splitByType = new basis.data.dataset.Split({
+  var splitByKind = new basis.data.dataset.Split({
     source: File.all,
     rule: 'data.isDir'
   });
-  var files = splitByType.getSubset(false, true);
-  var dirs = splitByType.getSubset(true, true);
+  var files = splitByKind.getSubset(false, true);
+  var dirs = splitByKind.getSubset(true, true);
 
   var splitByParent = new basis.data.dataset.Split({
     source: File.all,
@@ -80,12 +81,14 @@
     rule: 'data.from'
   });
 
+  var matched = new basis.data.dataset.Merge();
+
   module.exports = {
     File: File,
     FileLink: FileLink,
     files: files,
     dirs: dirs,
-    splitByType: splitByType,
+    matched: matched,
     splitByParent: splitByParent,
     linkTo: linkTo,
     linkFrom: linkFrom
