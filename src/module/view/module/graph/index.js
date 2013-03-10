@@ -1,5 +1,6 @@
-basis.require('basis.ui');
 basis.require('basis.timer');
+basis.require('basis.ui');
+basis.require('basis.ui.slider');
 
 var type = resource('../../type.js').fetch();
 var Viva = resource('vivagraph.js').fetch();
@@ -266,6 +267,12 @@ var renderer = Viva.Graph.View.renderer(graph, {
 });
 renderer.run();
 
+var speedSlider = new basis.ui.slider.Slider({
+  max: 100,
+  step: 10,
+  value: 30
+});
+
 // sync links & nodes with graph
 (function(){
   var links = type.FileLink.all.getItems().map(function(link){
@@ -316,9 +323,17 @@ renderer.run();
         }
       }
     }
-    setTimeout(popNode, 25);
+    setTimeout(popNode, speedSlider.value);
   };
   popNode();
 })();
 
-module.exports = svgGraphics;
+
+
+module.exports = new basis.ui.Node({
+  template: resource('template/view.tmpl'),
+  binding: {
+    graph: svgGraphics,
+    speedSlider: speedSlider
+  }
+});
