@@ -9,7 +9,8 @@ var File = new basis.entity.EntityType({
     files: Object,
     parent: {
       calc: basis.entity.CalculateField('filename', function(filename){
-        return filename.replace(/\/[^\/]*$/, '');
+        var result = filename.replace(/\/[^\/]*$/, '');
+        return result != filename ? result : '';
       })
     },
     name: {
@@ -42,9 +43,11 @@ function loadMap(fileMap){
     var parts = file.name.split('/');
     var path = '';
     var name;
+    var first = true;
     while (name = parts.shift())
     {
-      path += '/' + name;
+      path += (first ? '' : '/') + name;
+      first = false;
       files.push({
         filename: path,
         type: file.type,
@@ -56,8 +59,8 @@ function loadMap(fileMap){
 
   fileMap.links.forEach(function(link){
     return links.push({
-      from: '/' + link[0],
-      to: '/' + link[1]
+      from: link[0],
+      to: link[1]
     });
   });
   FileLink.all.sync(links);

@@ -1,0 +1,10 @@
+.graph-file-info__path
+{
+  font-size: 80%;
+  text-align: center;
+}
+.graph-file-info__name
+{
+  text-align: center;
+  padding: 4px 0 2px;
+}

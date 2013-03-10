@@ -1,3 +1,10 @@
 <b:style src="node.css"/>
 
-<svg:circle class="graph-node graph-node-{type} graph-node-{selected} graph-node-{matched}" r="8" cx="{x}" cy="{y}" event-click="select"/>
+<svg:circle class="graph-node graph-node-{type} graph-node-{selected} graph-node-{matched}"
+  cx="{x}"
+  cy="{y}"
+  r="8"
+  event-click="select hover"
+  event-mouseover="hover"
+  event-mouseout="unhover"
+  />

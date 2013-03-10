@@ -1,19 +1,55 @@
 basis.require('basis.timer');
 basis.require('basis.ui');
 basis.require('basis.ui.slider');
+basis.require('basis.ui.popup');
 
 var type = resource('../../type.js').fetch();
 var Viva = resource('vivagraph.js').fetch();
 
+var fileInfoPopup = new basis.ui.popup.Balloon({
+  template: resource('template/popup.tmpl'),
+  dir: 'center top center bottom',
+  autorotate: true,
+  handler: {
+    delegateChanged: function(){
+      if (this.delegate)
+        this.show(this.delegate.element);
+      else
+        this.hide();
+    }
+  },
+  childNodes: [
+    {
+      autoDelegate: true,
+      template: resource('template/fileInfo.tmpl'),
+      binding: {
+        filename: 'data:',
+        name: 'data:',
+        parent: 'data:'
+      }
+    }
+  ]
+});
+
 var GraphNode = basis.ui.Node.subclass({
-  template: resource('template/node.tmpl'),
   matched: false,
+
+  template: resource('template/node.tmpl'),
   binding: {
     type: 'data:',
     matched: 'data:matched',
     x: function(node){ return node.x && node.x.toFixed(2); },
     y: function(node){ return node.y && node.y.toFixed(2); }
   },
+  action: {
+    hover: function(){
+      fileInfoPopup.setDelegate(this);
+    },
+    unhover: function(){
+      fileInfoPopup.setDelegate();
+    }
+  },
+
   updatePos: function(pos){
     this.x = pos.x;
     this.y = pos.y;
@@ -30,6 +66,7 @@ var GraphLink = basis.ui.Node.subclass({
     x2: function(node){ return node.x2 && node.x2.toFixed(2); },
     y2: function(node){ return node.y2 && node.y2.toFixed(2); }
   },
+
   updatePos: function(pos1, pos2){
     this.x1 = pos1.x;
     this.y1 = pos1.y;
