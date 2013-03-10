@@ -1,0 +1,27 @@
+.file-graph-view
+{
+  height: 100%;
+  position: relative;
+}
+
+.file-graph-view__sidebar
+{
+  position: absolute;
+  z-index: 1000;
+  top: 5px;
+  left: 5px;
+  bottom: 5px;
+  width: 40%;
+  max-width: 400px;
+  border: 1px solid #888;
+  background: white;
+  background: rgba(255, 255, 255, .7);
+  overflow: auto;
+}
+
+.file-graph-view__content
+{
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+}

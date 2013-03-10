@@ -1,6 +1,7 @@
 basis.require('basis.ui');
 basis.require('basis.timer');
-basis.require('app.files');
+
+var type = resource('../../type.js').fetch();
 
 var GraphNode = basis.ui.Node.subclass({
   template: resource('template/node.tmpl'),
@@ -102,7 +103,7 @@ var svgGraphics = new basis.ui.Node({
   // node
   //
   node: function(graphNode){
-    var file = app.files.File(graphNode.id);
+    var file = type.File.getSlot(graphNode.id);
     var child = new GraphNode({
       delegate: file
     });
@@ -124,7 +125,7 @@ var svgGraphics = new basis.ui.Node({
   // link
   //
   link: function(graphNode){
-    var fileLink = app.files.FileLink.get({
+    var fileLink = type.FileLink.getSlot({
       from: graphNode.fromId,
       to: graphNode.toId
     });
@@ -239,7 +240,7 @@ var svgGraphics = new basis.ui.Node({
   endRender: function(){}
 });
 
-app.files.matched.addHandler({
+type.matched.addHandler({
   datasetChanged: function(matched, delta){
     svgGraphics.hasMatched = matched.itemCount > 0;
     svgGraphics.updateBind('hasMatched');
@@ -257,28 +258,66 @@ app.files.matched.addHandler({
 
 var graph = Viva.Graph.graph();
 
-/*var nodes = [];
-app.files.File.all.getItems().forEach(function(f){
-  if (!f.data.isDir)
-    nodes.push(f.getId());
-});*/
-var links = app.files.FileLink.all.getItems().map(function(f){
-  return [f.data.from, f.data.to];
-});
-
-var popNode = function(){
-  var link = links.shift();
-  graph.addLink.apply(graph, link);
-  if (links.length)
-    setTimeout(popNode, 50);
-};
-setTimeout(popNode, 50);
-
 var renderer = Viva.Graph.View.renderer(graph, {
   container: svgGraphics.element,
   graphics: svgGraphics,
   prerender: 50
 });
 renderer.run();
+
+// sync links & nodes with graph
+(function(){
+  var links = type.FileLink.all.getItems().map(function(link){
+    return [link.data.from, link.data.to];
+  });
+
+  type.File.all.addHandler({
+    datasetChanged: function(dataset, delta){
+      if (delta.deleted)
+        delta.deleted.forEach(function(file){
+          graph.removeNode(file.getId());
+        });
+    }
+  });
+
+  type.FileLink.all.addHandler({
+    datasetChanged: function(dataset, delta){
+      if (delta.inserted)
+      {
+        delta.inserted.forEach(function(link){
+          return links.push([link.data.from, link.data.to]);
+        });
+      }
+
+      if (delta.deleted)
+      {
+        delta.deleted.forEach(function(link){
+          graph.removeLink(link.data.from, link.data.to);
+        });
+      }
+    }
+  });
+
+  var popNode = function(){
+    if (links.length)
+    {  
+      var link;
+      while (link = links.shift())
+      {
+        var fileLink = type.FileLink.get({
+          from: link[0],
+          to: link[1]
+        });
+        if (fileLink)
+        {
+          graph.addLink.apply(graph, link);
+          break;
+        }
+      }
+    }
+    setTimeout(popNode, 25);
+  };
+  popNode();
+})();
 
 module.exports = svgGraphics;
