@@ -2,7 +2,7 @@
   basis.require('basis.entity');
   basis.require('basis.data.dataset');
 
-  var fileMap = resource('../data/file-map.json').fetch();
+  var fileMap = resource('../data/file-map.docs.json').fetch();
 
   var File = new basis.entity.EntityType({
     fields: {
@@ -36,7 +36,7 @@
     }
   });
 
-  fileMap.forEach(function(file){
+  fileMap.files.forEach(function(file){
     var parts = file.name.split('/');
     var path = '';
     var name;
@@ -49,13 +49,14 @@
         isDir: !!parts.length
       });
     }
-    file.files.forEach(function(relFile){
-      return FileLink({
-        from: '/' + file.name,
-        to: '/' + relFile
-      });
-    })
-  }); 
+  });
+
+  fileMap.links.forEach(function(link){
+    return FileLink({
+      from: '/' + link[0],
+      to: '/' + link[1]
+    });
+  });
 
   var splitByType = new basis.data.dataset.Split({
     source: File.all,

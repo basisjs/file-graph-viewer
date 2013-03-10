@@ -220,14 +220,14 @@ app.files.File.all.getItems().forEach(function(f){
 });*/
 var links = [];
 app.files.FileLink.all.getItems().forEach(function(f){
-  //graph.addLink(f.data.from, f.data.to);
   links.push([f.data.from, f.data.to]);
 });
 
 var popNode = function(){
-  graph.addLink.apply(graph, links.shift());
+  var link = links.shift();
+  graph.addLink.apply(graph, link);
   if (links.length)
-    setTimeout(popNode, 100);
+    setTimeout(popNode, 50);
 };
 setTimeout(popNode, 50);
 

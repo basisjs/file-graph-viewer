@@ -1,387 +1,582 @@
-[
+{
+  "files": [
   {
     "name": "index.html",
-    "type": "html",
-    "files": [
-      "lib/vivagraph.js",
-      "lib/basisjs/src/basis.js",
-      "src/app.js",
-      "src/app.css"
-    ]
+    "type": "html"
   },
   {
     "name": "lib/vivagraph.js",
-    "type": "script",
-    "files": [
-    ]
+    "type": "script"
   },
   {
     "name": "lib/basisjs/src/basis.js",
-    "type": "script",
-    "files": [
-    ]
+    "type": "script"
   },
   {
     "name": "src/app.js",
-    "type": "script",
-    "files": [
-      "lib/basisjs/src/basis/ui.js",
-      "src/module/list/view.js",
-      "src/module/details/view.js",
-      "src/module/fileStat/view.js",
-      "src/templates/layout.tmpl",
-      "src/app/files.js"
-    ]
+    "type": "script"
   },
   {
     "name": "lib/basisjs/src/basis/ui.js",
-    "type": "script",
-    "files": [
-      "lib/basisjs/src/basis/timer.js",
-      "lib/basisjs/src/basis/l10n.js",
-      "lib/basisjs/src/basis/dom/wrapper.js",
-      "lib/basisjs/src/basis/cssom.js",
-      "lib/basisjs/src/basis/template/html.js"
-    ]
-  },
-  {
-    "name": "src/module/list/view.js",
-    "type": "script",
-    "files": [
-      "lib/basisjs/src/basis/ui/tree.js",
-      "src/app/files.js",
-      "src/module/list/templates/list.tmpl"
-    ]
-  },
-  {
-    "name": "src/module/details/view.js",
-    "type": "script",
-    "files": [
-      "lib/basisjs/src/basis/ui.js",
-      "src/app/files.js",
-      "src/module/details/templates/fileList.tmpl",
-      "src/module/details/templates/file.tmpl",
-      "src/module/details/templates/layout.tmpl"
-    ]
-  },
-  {
-    "name": "src/module/fileStat/view.js",
-    "type": "script",
-    "files": [
-      "lib/basisjs/src/basis/ui.js",
-      "src/app/files.js",
-      "src/module/fileStat/template/fileStat.tmpl",
-      "src/module/fileStat/template/type.tmpl"
-    ]
-  },
-  {
-    "name": "src/templates/layout.tmpl",
-    "type": "template",
-    "files": [
-      "src/templates/layout.css"
-    ]
-  },
-  {
-    "name": "src/app/files.js",
-    "type": "script",
-    "files": [
-      "lib/basisjs/src/basis/entity.js",
-      "lib/basisjs/src/basis/data/dataset.js",
-      "src/data/file-map.json"
-    ]
+    "type": "script"
   },
   {
     "name": "lib/basisjs/src/basis/timer.js",
-    "type": "script",
-    "files": [
-    ]
+    "type": "script"
   },
   {
     "name": "lib/basisjs/src/basis/l10n.js",
-    "type": "script",
-    "files": [
-    ]
-  },
-  {
-    "name": "lib/basisjs/src/basis/dom/wrapper.js",
-    "type": "script",
-    "files": [
-      "lib/basisjs/src/basis/event.js",
-      "lib/basisjs/src/basis/data.js"
-    ]
-  },
-  {
-    "name": "lib/basisjs/src/basis/cssom.js",
-    "type": "script",
-    "files": [
-      "lib/basisjs/src/basis/dom.js",
-      "lib/basisjs/src/basis/dom/event.js"
-    ]
-  },
-  {
-    "name": "lib/basisjs/src/basis/template/html.js",
-    "type": "script",
-    "files": [
-      "lib/basisjs/src/basis/dom.js",
-      "lib/basisjs/src/basis/dom/event.js",
-      "lib/basisjs/src/basis/l10n.js",
-      "lib/basisjs/src/basis/template.js"
-    ]
-  },
-  {
-    "name": "lib/basisjs/src/basis/ui/tree.js",
-    "type": "script",
-    "files": [
-      "lib/basisjs/src/basis/event.js",
-      "lib/basisjs/src/basis/dom.js",
-      "lib/basisjs/src/basis/dom/event.js",
-      "lib/basisjs/src/basis/ui.js",
-      "lib/basisjs/src/basis/template.js",
-      "lib/basisjs/src/basis/ui/templates/tree/Tree.tmpl",
-      "lib/basisjs/src/basis/ui/templates/tree/PartitionNode.tmpl",
-      "lib/basisjs/src/basis/ui/templates/tree/Node.tmpl",
-      "lib/basisjs/src/basis/ui/templates/tree/Folder.tmpl"
-    ]
-  },
-  {
-    "name": "src/module/list/templates/list.tmpl",
-    "type": "template",
-    "files": [
-      "src/module/list/templates/list.css"
-    ]
-  },
-  {
-    "name": "src/module/details/templates/fileList.tmpl",
-    "type": "template",
-    "files": [
-      "src/module/details/templates/fileList.css"
-    ]
-  },
-  {
-    "name": "src/module/details/templates/file.tmpl",
-    "type": "template",
-    "files": [
-    ]
-  },
-  {
-    "name": "src/module/details/templates/layout.tmpl",
-    "type": "template",
-    "files": [
-      "src/module/details/templates/layout.css"
-    ]
-  },
-  {
-    "name": "src/module/fileStat/template/fileStat.tmpl",
-    "type": "template",
-    "files": [
-      "src/module/fileStat/template/fileStat.css",
-      "src/module/fileStat/template/type.css"
-    ]
-  },
-  {
-    "name": "src/module/fileStat/template/type.tmpl",
-    "type": "template",
-    "files": [
-      "src/module/fileStat/template/type.css"
-    ]
-  },
-  {
-    "name": "lib/basisjs/src/basis/entity.js",
-    "type": "script",
-    "files": [
-      "lib/basisjs/src/basis/event.js",
-      "lib/basisjs/src/basis/data.js",
-      "lib/basisjs/src/basis/data/dataset.js"
-    ]
-  },
-  {
-    "name": "lib/basisjs/src/basis/data/dataset.js",
-    "type": "script",
-    "files": [
-      "lib/basisjs/src/basis/event.js",
-      "lib/basisjs/src/basis/data.js"
-    ]
-  },
-  {
-    "name": "src/data/file-map.json",
-    "type": "json",
-    "files": [
-    ]
-  },
-  {
-    "name": "lib/basisjs/src/basis/event.js",
-    "type": "script",
-    "files": [
-    ]
+    "type": "script"
   },
   {
     "name": "lib/basisjs/src/basis/data.js",
-    "type": "script",
-    "files": [
-      "lib/basisjs/src/basis/event.js"
-    ]
+    "type": "script"
+  },
+  {
+    "name": "lib/basisjs/src/basis/event.js",
+    "type": "script"
+  },
+  {
+    "name": "lib/basisjs/src/basis/dom/wrapper.js",
+    "type": "script"
+  },
+  {
+    "name": "lib/basisjs/src/basis/cssom.js",
+    "type": "script"
   },
   {
     "name": "lib/basisjs/src/basis/dom.js",
-    "type": "script",
-    "files": [
-      "lib/basisjs/src/basis/ua.js"
-    ]
-  },
-  {
-    "name": "lib/basisjs/src/basis/dom/event.js",
-    "type": "script",
-    "files": [
-      "lib/basisjs/src/basis/dom.js"
-    ]
-  },
-  {
-    "name": "lib/basisjs/src/basis/template.js",
-    "type": "script",
-    "files": [
-    ]
-  },
-  {
-    "name": "lib/basisjs/src/basis/ui/templates/tree/Tree.tmpl",
-    "type": "template",
-    "files": [
-      "lib/basisjs/src/basis/ui/templates/tree/Tree.css"
-    ]
-  },
-  {
-    "name": "lib/basisjs/src/basis/ui/templates/tree/PartitionNode.tmpl",
-    "type": "template",
-    "files": [
-      "lib/basisjs/src/basis/ui/templates/tree/PartitionNode.css"
-    ]
-  },
-  {
-    "name": "lib/basisjs/src/basis/ui/templates/tree/Node.tmpl",
-    "type": "template",
-    "files": [
-      "lib/basisjs/src/basis/ui/templates/tree/Node.css"
-    ]
-  },
-  {
-    "name": "lib/basisjs/src/basis/ui/templates/tree/Folder.tmpl",
-    "type": "template",
-    "files": [
-      "lib/basisjs/src/basis/ui/templates/tree/Node.css",
-      "lib/basisjs/src/basis/ui/templates/tree/Node_Expander.css",
-      "lib/basisjs/src/basis/ui/templates/tree/Folder.css"
-    ]
+    "type": "script"
   },
   {
     "name": "lib/basisjs/src/basis/ua.js",
-    "type": "script",
-    "files": [
-    ]
+    "type": "script"
   },
   {
-    "name": "src/templates/layout.css",
-    "type": "style",
-    "files": [
-    ]
+    "name": "lib/basisjs/src/basis/template/html.js",
+    "type": "script"
   },
   {
-    "name": "src/module/list/templates/list.css",
-    "type": "style",
-    "files": [
-    ]
+    "name": "lib/basisjs/src/basis/dom/event.js",
+    "type": "script"
   },
   {
-    "name": "src/module/details/templates/fileList.css",
-    "type": "style",
-    "files": [
-    ]
+    "name": "lib/basisjs/src/basis/template.js",
+    "type": "script"
   },
   {
-    "name": "src/module/details/templates/layout.css",
-    "type": "style",
-    "files": [
-    ]
+    "name": "lib/basisjs/src/basis/template/htmlfgen.js",
+    "type": "script"
   },
   {
-    "name": "src/module/fileStat/template/fileStat.css",
-    "type": "style",
-    "files": [
-    ]
+    "name": "lib/basisjs/src/basis/ui/tree.js",
+    "type": "script"
   },
   {
-    "name": "src/module/fileStat/template/type.css",
-    "type": "style",
-    "files": [
-    ]
+    "name": "lib/basisjs/src/basis/ui/templates/tree/Tree.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "lib/basisjs/src/basis/ui/templates/tree/PartitionNode.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "lib/basisjs/src/basis/ui/templates/tree/Node.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "lib/basisjs/src/basis/ui/templates/tree/Folder.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "lib/basisjs/src/basis/devpanel.js",
+    "type": "script"
+  },
+  {
+    "name": "lib/basisjs/src/basis/devpanel/panel.js",
+    "type": "script"
+  },
+  {
+    "name": "lib/basisjs/src/basis/devpanel/transport.js",
+    "type": "script"
+  },
+  {
+    "name": "lib/basisjs/src/basis/devpanel/fileAPI.js",
+    "type": "script"
+  },
+  {
+    "name": "lib/basisjs/src/basis/devpanel/l10nAPI.js",
+    "type": "script"
+  },
+  {
+    "name": "lib/basisjs/src/basis/devpanel/templateAPI.js",
+    "type": "script"
+  },
+  {
+    "name": "src/module/list/index.js",
+    "type": "script"
+  },
+  {
+    "name": "src/module/details/index.js",
+    "type": "script"
+  },
+  {
+    "name": "src/module/fileStat/index.js",
+    "type": "script"
+  },
+  {
+    "name": "src/module/graph/index.js",
+    "type": "script"
+  },
+  {
+    "name": "src/app/template/layout.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "lib/basisjs/src/basis/ui/menu.js",
+    "type": "script"
+  },
+  {
+    "name": "lib/basisjs/src/basis/ui/popup.js",
+    "type": "script"
+  },
+  {
+    "name": "lib/basisjs/src/basis/layout.js",
+    "type": "script"
+  },
+  {
+    "name": "lib/basisjs/src/basis/ui/templates/layout/VerticalPanel.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "lib/basisjs/src/basis/ui/templates/layout/VerticalPanelStack.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "lib/basisjs/src/basis/ui/templates/popup/Popup.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "lib/basisjs/src/basis/ui/templates/popup/Balloon.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "lib/basisjs/src/basis/ui/templates/popup/popupManager.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "lib/basisjs/src/basis/ui/templates/menu/MenuItem.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "lib/basisjs/src/basis/ui/templates/menu/MenuItemSet.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "lib/basisjs/src/basis/ui/templates/menu/PartitionNode.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "lib/basisjs/src/basis/ui/templates/menu/Menu.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "lib/basisjs/src/basis/dragdrop.js",
+    "type": "script"
+  },
+  {
+    "name": "lib/basisjs/src/basis/devpanel/l10nInspector.js",
+    "type": "script"
+  },
+  {
+    "name": "lib/basisjs/src/basis/devpanel/colorPicker.js",
+    "type": "script"
+  },
+  {
+    "name": "lib/basisjs/src/basis/devpanel/templateInspector.js",
+    "type": "script"
+  },
+  {
+    "name": "lib/basisjs/src/basis/data/property.js",
+    "type": "script"
+  },
+  {
+    "name": "lib/basisjs/src/basis/devpanel/template/cultureItem.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "lib/basisjs/src/basis/devpanel/template/panel.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/app/files.js",
+    "type": "script"
+  },
+  {
+    "name": "lib/basisjs/src/basis/entity.js",
+    "type": "script"
+  },
+  {
+    "name": "lib/basisjs/src/basis/data/dataset.js",
+    "type": "script"
+  },
+  {
+    "name": "src/data/file-map.1.json",
+    "type": "json"
+  },
+  {
+    "name": "src/module/list/templates/list.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/module/details/templates/fileList.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/module/details/templates/file.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/module/details/templates/layout.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/module/fileStat/template/fileStat.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/module/fileStat/template/type.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/module/graph/template/node.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/module/graph/template/link.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/module/graph/template/graph.tmpl",
+    "type": "template"
   },
   {
     "name": "lib/basisjs/src/basis/ui/templates/tree/Tree.css",
-    "type": "style",
-    "files": [
-    ]
+    "type": "style"
   },
   {
     "name": "lib/basisjs/src/basis/ui/templates/tree/PartitionNode.css",
-    "type": "style",
-    "files": [
-    ]
+    "type": "style"
   },
   {
     "name": "lib/basisjs/src/basis/ui/templates/tree/Node.css",
-    "type": "style",
-    "files": [
-      "lib/basisjs/src/basis/ui/templates/tree/res/page.gif"
-    ]
+    "type": "style"
   },
   {
     "name": "lib/basisjs/src/basis/ui/templates/tree/Node_Expander.css",
-    "type": "style",
-    "files": [
-      "lib/basisjs/src/basis/ui/templates/tree/res/minus.gif",
-      "lib/basisjs/src/basis/ui/templates/tree/res/plus.gif"
-    ]
+    "type": "style"
   },
   {
     "name": "lib/basisjs/src/basis/ui/templates/tree/Folder.css",
-    "type": "style",
-    "files": [
-      "lib/basisjs/src/basis/ui/templates/tree/res/folder_open.gif",
-      "lib/basisjs/src/basis/ui/templates/tree/res/folder_close.gif"
-    ]
+    "type": "style"
   },
   {
-    "name": "src/app.css",
-    "type": "style",
-    "files": [
-    ]
+    "name": "lib/basisjs/src/basis/ui/templates/layout/VerticalPanel.css",
+    "type": "style"
+  },
+  {
+    "name": "lib/basisjs/src/basis/ui/templates/layout/VerticalPanelStack.css",
+    "type": "style"
+  },
+  {
+    "name": "lib/basisjs/src/basis/ui/templates/popup/Popup.css",
+    "type": "style"
+  },
+  {
+    "name": "lib/basisjs/src/basis/ui/templates/popup/Balloon.css",
+    "type": "style"
+  },
+  {
+    "name": "lib/basisjs/src/basis/ui/templates/menu/MenuItem.css",
+    "type": "style"
+  },
+  {
+    "name": "lib/basisjs/src/basis/ui/templates/menu/PartitionNode.css",
+    "type": "style"
+  },
+  {
+    "name": "lib/basisjs/src/basis/ui/templates/menu/Menu.css",
+    "type": "style"
+  },
+  {
+    "name": "src/app/template/layout.css",
+    "type": "style"
+  },
+  {
+    "name": "lib/basisjs/src/basis/devpanel/template/cultureItem.css",
+    "type": "style"
+  },
+  {
+    "name": "lib/basisjs/src/basis/devpanel/template/panel.css",
+    "type": "style"
+  },
+  {
+    "name": "src/module/list/templates/list.css",
+    "type": "style"
+  },
+  {
+    "name": "src/module/details/templates/fileList.css",
+    "type": "style"
+  },
+  {
+    "name": "src/module/details/templates/layout.css",
+    "type": "style"
+  },
+  {
+    "name": "src/module/fileStat/template/fileStat.css",
+    "type": "style"
+  },
+  {
+    "name": "src/module/fileStat/template/type.css",
+    "type": "style"
+  },
+  {
+    "name": "src/module/graph/template/node.css",
+    "type": "style"
+  },
+  {
+    "name": "src/module/graph/template/link.css",
+    "type": "style"
   },
   {
     "name": "lib/basisjs/src/basis/ui/templates/tree/res/page.gif",
-    "type": "image",
-    "files": [
-    ]
+    "type": "image"
   },
   {
     "name": "lib/basisjs/src/basis/ui/templates/tree/res/minus.gif",
-    "type": "image",
-    "files": [
-    ]
+    "type": "image"
   },
   {
     "name": "lib/basisjs/src/basis/ui/templates/tree/res/plus.gif",
-    "type": "image",
-    "files": [
-    ]
+    "type": "image"
   },
   {
     "name": "lib/basisjs/src/basis/ui/templates/tree/res/folder_open.gif",
-    "type": "image",
-    "files": [
-    ]
+    "type": "image"
   },
   {
     "name": "lib/basisjs/src/basis/ui/templates/tree/res/folder_close.gif",
-    "type": "image",
-    "files": [
-    ]
+    "type": "image"
+  },
+  {
+    "name": "lib/basisjs/src/basis/ui/templates/popup/res/corners.png",
+    "type": "image"
+  },
+  {
+    "name": "lib/basisjs/src/basis/ui/templates/popup/res/tails.png",
+    "type": "image"
+  },
+  {
+    "name": "lib/basisjs/src/basis/ui/templates/popup/res/repeat-x.png",
+    "type": "image"
+  },
+  {
+    "name": "lib/basisjs/src/basis/ui/templates/popup/res/repeat-y.png",
+    "type": "image"
+  },
+  {
+    "name": "lib/basisjs/src/basis/ui/templates/menu/res/overlay.png",
+    "type": "image"
+  },
+  {
+    "name": "lib/basisjs/src/basis/ui/templates/menu/res/menuitem_selected_icon.gif",
+    "type": "image"
+  },
+  {
+    "name": "lib/basisjs/src/basis/devpanel/template/img/flags.png",
+    "type": "image"
+  },
+  {
+    "name": "lib/basisjs/src/basis/devpanel/template/img/inspect-template.png",
+    "type": "image"
+  },
+  {
+    "name": "lib/basisjs/src/basis/devpanel/template/img/inspect-l10n.png",
+    "type": "image"
+  },
+  {
+    "name": "lib/basisjs/src/basis/devpanel/template/img/drag.png",
+    "type": "image"
   }
-]
+  ],
+  "links": [
+["index.html", "lib/vivagraph.js"],
+    ["index.html", "lib/basisjs/src/basis.js"],
+    ["lib/basisjs/src/basis.js", "src/app.js"],
+    ["src/app.js", "lib/basisjs/src/basis/ui.js"],
+    ["lib/basisjs/src/basis/ui.js", "lib/basisjs/src/basis/timer.js"],
+    ["lib/basisjs/src/basis/ui.js", "lib/basisjs/src/basis/l10n.js"],
+    ["lib/basisjs/src/basis/ui.js", "lib/basisjs/src/basis/data.js"],
+    ["lib/basisjs/src/basis/data.js", "lib/basisjs/src/basis/event.js"],
+    ["lib/basisjs/src/basis/ui.js", "lib/basisjs/src/basis/dom/wrapper.js"],
+    ["lib/basisjs/src/basis/dom/wrapper.js", "lib/basisjs/src/basis/event.js"],
+    ["lib/basisjs/src/basis/dom/wrapper.js", "lib/basisjs/src/basis/data.js"],
+    ["lib/basisjs/src/basis/ui.js", "lib/basisjs/src/basis/cssom.js"],
+    ["lib/basisjs/src/basis/cssom.js", "lib/basisjs/src/basis/dom.js"],
+    ["lib/basisjs/src/basis/dom.js", "lib/basisjs/src/basis/ua.js"],
+    ["lib/basisjs/src/basis/ui.js", "lib/basisjs/src/basis/template/html.js"],
+    ["lib/basisjs/src/basis/template/html.js", "lib/basisjs/src/basis/dom.js"],
+    ["lib/basisjs/src/basis/template/html.js", "lib/basisjs/src/basis/dom/event.js"],
+    ["lib/basisjs/src/basis/template/html.js", "lib/basisjs/src/basis/l10n.js"],
+    ["lib/basisjs/src/basis/template/html.js", "lib/basisjs/src/basis/template.js"],
+    ["lib/basisjs/src/basis/template/html.js", "lib/basisjs/src/basis/template/htmlfgen.js"],
+    ["lib/basisjs/src/basis/template/htmlfgen.js", "lib/basisjs/src/basis/template.js"],
+    ["src/app.js", "lib/basisjs/src/basis/ui/tree.js"],
+    ["lib/basisjs/src/basis/ui/tree.js", "lib/basisjs/src/basis/event.js"],
+    ["lib/basisjs/src/basis/ui/tree.js", "lib/basisjs/src/basis/dom.js"],
+    ["lib/basisjs/src/basis/ui/tree.js", "lib/basisjs/src/basis/ui.js"],
+    ["lib/basisjs/src/basis/ui/tree.js", "lib/basisjs/src/basis/template.js"],
+    ["lib/basisjs/src/basis/ui/tree.js", "lib/basisjs/src/basis/ui/templates/tree/Tree.tmpl"],
+    ["lib/basisjs/src/basis/ui/tree.js", "lib/basisjs/src/basis/ui/templates/tree/PartitionNode.tmpl"],
+    ["lib/basisjs/src/basis/ui/tree.js", "lib/basisjs/src/basis/ui/templates/tree/Node.tmpl"],
+    ["lib/basisjs/src/basis/ui/tree.js", "lib/basisjs/src/basis/ui/templates/tree/Folder.tmpl"],
+    ["src/app.js", "lib/basisjs/src/basis/devpanel.js"],
+    ["lib/basisjs/src/basis/devpanel.js", "lib/basisjs/src/basis/devpanel/panel.js"],
+    ["lib/basisjs/src/basis/devpanel.js", "lib/basisjs/src/basis/devpanel/transport.js"],
+    ["lib/basisjs/src/basis/devpanel.js", "lib/basisjs/src/basis/devpanel/fileAPI.js"],
+    ["lib/basisjs/src/basis/devpanel.js", "lib/basisjs/src/basis/devpanel/l10nAPI.js"],
+    ["lib/basisjs/src/basis/devpanel.js", "lib/basisjs/src/basis/devpanel/templateAPI.js"],
+    ["src/app.js", "src/module/list/index.js"],
+    ["src/app.js", "src/module/details/index.js"],
+    ["src/app.js", "src/module/fileStat/index.js"],
+    ["src/app.js", "src/module/graph/index.js"],
+    ["src/app.js", "src/app/template/layout.tmpl"],
+    ["lib/basisjs/src/basis/devpanel/panel.js", "lib/basisjs/src/basis/ui.js"],
+    ["lib/basisjs/src/basis/devpanel/panel.js", "lib/basisjs/src/basis/ui/menu.js"],
+    ["lib/basisjs/src/basis/ui/menu.js", "lib/basisjs/src/basis/ui.js"],
+    ["lib/basisjs/src/basis/ui/menu.js", "lib/basisjs/src/basis/ui/popup.js"],
+    ["lib/basisjs/src/basis/ui/popup.js", "lib/basisjs/src/basis/event.js"],
+    ["lib/basisjs/src/basis/ui/popup.js", "lib/basisjs/src/basis/dom.js"],
+    ["lib/basisjs/src/basis/ui/popup.js", "lib/basisjs/src/basis/dom/event.js"],
+    ["lib/basisjs/src/basis/ui/popup.js", "lib/basisjs/src/basis/cssom.js"],
+    ["lib/basisjs/src/basis/ui/popup.js", "lib/basisjs/src/basis/layout.js"],
+    ["lib/basisjs/src/basis/layout.js", "lib/basisjs/src/basis/ua.js"],
+    ["lib/basisjs/src/basis/layout.js", "lib/basisjs/src/basis/dom.js"],
+    ["lib/basisjs/src/basis/layout.js", "lib/basisjs/src/basis/cssom.js"],
+    ["lib/basisjs/src/basis/layout.js", "lib/basisjs/src/basis/template.js"],
+    ["lib/basisjs/src/basis/layout.js", "lib/basisjs/src/basis/ui.js"],
+    ["lib/basisjs/src/basis/layout.js", "lib/basisjs/src/basis/ui/templates/layout/VerticalPanel.tmpl"],
+    ["lib/basisjs/src/basis/layout.js", "lib/basisjs/src/basis/ui/templates/layout/VerticalPanelStack.tmpl"],
+    ["lib/basisjs/src/basis/ui/popup.js", "lib/basisjs/src/basis/l10n.js"],
+    ["lib/basisjs/src/basis/ui/popup.js", "lib/basisjs/src/basis/ui.js"],
+    ["lib/basisjs/src/basis/ui/popup.js", "lib/basisjs/src/basis/ui/templates/popup/Popup.tmpl"],
+    ["lib/basisjs/src/basis/ui/popup.js", "lib/basisjs/src/basis/ui/templates/popup/Balloon.tmpl"],
+    ["lib/basisjs/src/basis/ui/popup.js", "lib/basisjs/src/basis/ui/templates/popup/popupManager.tmpl"],
+    ["lib/basisjs/src/basis/ui/menu.js", "lib/basisjs/src/basis/ui/templates/menu/MenuItem.tmpl"],
+    ["lib/basisjs/src/basis/ui/menu.js", "lib/basisjs/src/basis/ui/templates/menu/MenuItemSet.tmpl"],
+    ["lib/basisjs/src/basis/ui/menu.js", "lib/basisjs/src/basis/ui/templates/menu/PartitionNode.tmpl"],
+    ["lib/basisjs/src/basis/ui/menu.js", "lib/basisjs/src/basis/ui/templates/menu/Menu.tmpl"],
+    ["lib/basisjs/src/basis/devpanel/panel.js", "lib/basisjs/src/basis/dragdrop.js"],
+    ["lib/basisjs/src/basis/dragdrop.js", "lib/basisjs/src/basis/event.js"],
+    ["lib/basisjs/src/basis/dragdrop.js", "lib/basisjs/src/basis/ua.js"],
+    ["lib/basisjs/src/basis/dragdrop.js", "lib/basisjs/src/basis/dom.js"],
+    ["lib/basisjs/src/basis/dragdrop.js", "lib/basisjs/src/basis/dom/event.js"],
+    ["lib/basisjs/src/basis/dragdrop.js", "lib/basisjs/src/basis/cssom.js"],
+    ["lib/basisjs/src/basis/dragdrop.js", "lib/basisjs/src/basis/layout.js"],
+    ["lib/basisjs/src/basis/devpanel/panel.js", "lib/basisjs/src/basis/l10n.js"],
+    ["lib/basisjs/src/basis/devpanel/panel.js", "lib/basisjs/src/basis/devpanel/l10nInspector.js"],
+    ["lib/basisjs/src/basis/devpanel/l10nInspector.js", "lib/basisjs/src/basis/dom.js"],
+    ["lib/basisjs/src/basis/devpanel/l10nInspector.js", "lib/basisjs/src/basis/dom/event.js"],
+    ["lib/basisjs/src/basis/devpanel/l10nInspector.js", "lib/basisjs/src/basis/cssom.js"],
+    ["lib/basisjs/src/basis/devpanel/l10nInspector.js", "lib/basisjs/src/basis/devpanel/colorPicker.js"],
+    ["lib/basisjs/src/basis/devpanel/l10nInspector.js", "lib/basisjs/src/basis/devpanel/transport.js"],
+    ["lib/basisjs/src/basis/devpanel/transport.js", "lib/basisjs/src/basis/dom.js"],
+    ["lib/basisjs/src/basis/devpanel/panel.js", "lib/basisjs/src/basis/devpanel/templateInspector.js"],
+    ["lib/basisjs/src/basis/devpanel/templateInspector.js", "lib/basisjs/src/basis/dom.js"],
+    ["lib/basisjs/src/basis/devpanel/templateInspector.js", "lib/basisjs/src/basis/dom/event.js"],
+    ["lib/basisjs/src/basis/devpanel/templateInspector.js", "lib/basisjs/src/basis/data/property.js"],
+    ["lib/basisjs/src/basis/data/property.js", "lib/basisjs/src/basis/timer.js"],
+    ["lib/basisjs/src/basis/data/property.js", "lib/basisjs/src/basis/event.js"],
+    ["lib/basisjs/src/basis/data/property.js", "lib/basisjs/src/basis/dom.js"],
+    ["lib/basisjs/src/basis/data/property.js", "lib/basisjs/src/basis/cssom.js"],
+    ["lib/basisjs/src/basis/data/property.js", "lib/basisjs/src/basis/data.js"],
+    ["lib/basisjs/src/basis/devpanel/templateInspector.js", "lib/basisjs/src/basis/ui.js"],
+    ["lib/basisjs/src/basis/devpanel/templateInspector.js", "lib/basisjs/src/basis/ui/popup.js"],
+    ["lib/basisjs/src/basis/devpanel/templateInspector.js", "lib/basisjs/src/basis/devpanel/transport.js"],
+    ["lib/basisjs/src/basis/devpanel/panel.js", "lib/basisjs/src/basis/devpanel/template/cultureItem.tmpl"],
+    ["lib/basisjs/src/basis/devpanel/panel.js", "lib/basisjs/src/basis/devpanel/template/panel.tmpl"],
+    ["lib/basisjs/src/basis/devpanel/fileAPI.js", "lib/basisjs/src/basis/devpanel/transport.js"],
+    ["lib/basisjs/src/basis/devpanel/l10nAPI.js", "lib/basisjs/src/basis/data/property.js"],
+    ["lib/basisjs/src/basis/devpanel/l10nAPI.js", "lib/basisjs/src/basis/devpanel/l10nInspector.js"],
+    ["lib/basisjs/src/basis/devpanel/l10nAPI.js", "lib/basisjs/src/basis/devpanel/transport.js"],
+    ["lib/basisjs/src/basis/devpanel/templateAPI.js", "lib/basisjs/src/basis/devpanel/templateInspector.js"],
+    ["src/module/list/index.js", "lib/basisjs/src/basis/ui/tree.js"],
+    ["src/module/list/index.js", "src/app/files.js"],
+    ["src/app/files.js", "lib/basisjs/src/basis/entity.js"],
+    ["lib/basisjs/src/basis/entity.js", "lib/basisjs/src/basis/event.js"],
+    ["lib/basisjs/src/basis/entity.js", "lib/basisjs/src/basis/data.js"],
+    ["lib/basisjs/src/basis/entity.js", "lib/basisjs/src/basis/data/dataset.js"],
+    ["lib/basisjs/src/basis/data/dataset.js", "lib/basisjs/src/basis/event.js"],
+    ["lib/basisjs/src/basis/data/dataset.js", "lib/basisjs/src/basis/data.js"],
+    ["src/app/files.js", "lib/basisjs/src/basis/data/dataset.js"],
+    ["src/app/files.js", "src/data/file-map.1.json"],
+    ["src/module/list/index.js", "src/module/list/templates/list.tmpl"],
+    ["src/module/details/index.js", "lib/basisjs/src/basis/ui.js"],
+    ["src/module/details/index.js", "src/app/files.js"],
+    ["src/module/details/index.js", "src/module/details/templates/fileList.tmpl"],
+    ["src/module/details/index.js", "src/module/details/templates/file.tmpl"],
+    ["src/module/details/index.js", "src/module/details/templates/layout.tmpl"],
+    ["src/module/fileStat/index.js", "lib/basisjs/src/basis/ui.js"],
+    ["src/module/fileStat/index.js", "src/app/files.js"],
+    ["src/module/fileStat/index.js", "src/module/fileStat/template/fileStat.tmpl"],
+    ["src/module/fileStat/index.js", "src/module/fileStat/template/type.tmpl"],
+    ["src/module/graph/index.js", "lib/basisjs/src/basis/ui.js"],
+    ["src/module/graph/index.js", "lib/basisjs/src/basis/timer.js"],
+    ["src/module/graph/index.js", "src/app/files.js"],
+    ["src/module/graph/index.js", "src/module/graph/template/node.tmpl"],
+    ["src/module/graph/index.js", "src/module/graph/template/link.tmpl"],
+    ["src/module/graph/index.js", "src/module/graph/template/graph.tmpl"],
+    ["lib/basisjs/src/basis/ui/templates/tree/Tree.tmpl", "lib/basisjs/src/basis/ui/templates/tree/Tree.css"],
+    ["lib/basisjs/src/basis/ui/templates/tree/PartitionNode.tmpl", "lib/basisjs/src/basis/ui/templates/tree/PartitionNode.css"],
+    ["lib/basisjs/src/basis/ui/templates/tree/Node.tmpl", "lib/basisjs/src/basis/ui/templates/tree/Node.css"],
+    ["lib/basisjs/src/basis/ui/templates/tree/Folder.tmpl", "lib/basisjs/src/basis/ui/templates/tree/Node.css"],
+    ["lib/basisjs/src/basis/ui/templates/tree/Folder.tmpl", "lib/basisjs/src/basis/ui/templates/tree/Node_Expander.css"],
+    ["lib/basisjs/src/basis/ui/templates/tree/Folder.tmpl", "lib/basisjs/src/basis/ui/templates/tree/Folder.css"],
+    ["lib/basisjs/src/basis/ui/templates/layout/VerticalPanel.tmpl", "lib/basisjs/src/basis/ui/templates/layout/VerticalPanel.css"],
+    ["lib/basisjs/src/basis/ui/templates/layout/VerticalPanelStack.tmpl", "lib/basisjs/src/basis/ui/templates/layout/VerticalPanelStack.css"],
+    ["lib/basisjs/src/basis/ui/templates/popup/Popup.tmpl", "lib/basisjs/src/basis/ui/templates/popup/Popup.css"],
+    ["lib/basisjs/src/basis/ui/templates/popup/Balloon.tmpl", "lib/basisjs/src/basis/ui/templates/popup/Balloon.css"],
+    ["lib/basisjs/src/basis/ui/templates/menu/MenuItem.tmpl", "lib/basisjs/src/basis/ui/templates/menu/MenuItem.css"],
+    ["lib/basisjs/src/basis/ui/templates/menu/PartitionNode.tmpl", "lib/basisjs/src/basis/ui/templates/menu/PartitionNode.css"],
+    ["lib/basisjs/src/basis/ui/templates/menu/Menu.tmpl", "lib/basisjs/src/basis/ui/templates/menu/Menu.css"],
+    ["src/app/template/layout.tmpl", "src/app/template/layout.css"],
+    ["lib/basisjs/src/basis/devpanel/template/cultureItem.tmpl", "lib/basisjs/src/basis/devpanel/template/cultureItem.css"],
+    ["lib/basisjs/src/basis/devpanel/template/cultureItem.tmpl", "lib/basisjs/src/basis/ui/templates/menu/MenuItem.css"],
+    ["lib/basisjs/src/basis/devpanel/template/panel.tmpl", "lib/basisjs/src/basis/devpanel/template/panel.css"],
+    ["src/module/list/templates/list.tmpl", "src/module/list/templates/list.css"],
+    ["src/module/list/templates/list.tmpl", "lib/basisjs/src/basis/ui/templates/tree/Tree.css"],
+    ["src/module/details/templates/fileList.tmpl", "src/module/details/templates/fileList.css"],
+    ["src/module/details/templates/layout.tmpl", "src/module/details/templates/layout.css"],
+    ["src/module/fileStat/template/fileStat.tmpl", "src/module/fileStat/template/fileStat.css"],
+    ["src/module/fileStat/template/fileStat.tmpl", "src/module/fileStat/template/type.css"],
+    ["src/module/fileStat/template/type.tmpl", "src/module/fileStat/template/type.css"],
+    ["src/module/graph/template/node.tmpl", "src/module/graph/template/node.css"],
+    ["src/module/graph/template/link.tmpl", "src/module/graph/template/link.css"],
+    ["lib/basisjs/src/basis/ui/templates/tree/Node.css", "lib/basisjs/src/basis/ui/templates/tree/res/page.gif"],
+    ["lib/basisjs/src/basis/ui/templates/tree/Node_Expander.css", "lib/basisjs/src/basis/ui/templates/tree/res/minus.gif"],
+    ["lib/basisjs/src/basis/ui/templates/tree/Node_Expander.css", "lib/basisjs/src/basis/ui/templates/tree/res/plus.gif"],
+    ["lib/basisjs/src/basis/ui/templates/tree/Folder.css", "lib/basisjs/src/basis/ui/templates/tree/res/folder_open.gif"],
+    ["lib/basisjs/src/basis/ui/templates/tree/Folder.css", "lib/basisjs/src/basis/ui/templates/tree/res/folder_close.gif"],
+    ["lib/basisjs/src/basis/ui/templates/popup/Balloon.css", "lib/basisjs/src/basis/ui/templates/popup/res/corners.png"],
+    ["lib/basisjs/src/basis/ui/templates/popup/Balloon.css", "lib/basisjs/src/basis/ui/templates/popup/res/tails.png"],
+    ["lib/basisjs/src/basis/ui/templates/popup/Balloon.css", "lib/basisjs/src/basis/ui/templates/popup/res/repeat-x.png"],
+    ["lib/basisjs/src/basis/ui/templates/popup/Balloon.css", "lib/basisjs/src/basis/ui/templates/popup/res/repeat-y.png"],
+    ["lib/basisjs/src/basis/ui/templates/menu/MenuItem.css", "lib/basisjs/src/basis/ui/templates/menu/res/overlay.png"],
+    ["lib/basisjs/src/basis/ui/templates/menu/MenuItem.css", "lib/basisjs/src/basis/ui/templates/menu/res/menuitem_selected_icon.gif"],
+    ["lib/basisjs/src/basis/devpanel/template/cultureItem.css", "lib/basisjs/src/basis/devpanel/template/img/flags.png"],
+    ["lib/basisjs/src/basis/devpanel/template/panel.css", "lib/basisjs/src/basis/devpanel/template/img/inspect-template.png"],
+    ["lib/basisjs/src/basis/devpanel/template/panel.css", "lib/basisjs/src/basis/devpanel/template/img/inspect-l10n.png"],
+    ["lib/basisjs/src/basis/devpanel/template/panel.css", "lib/basisjs/src/basis/devpanel/template/img/flags.png"],
+    ["lib/basisjs/src/basis/devpanel/template/panel.css", "lib/basisjs/src/basis/devpanel/template/img/drag.png"]
+  ]
+}

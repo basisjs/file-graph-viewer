@@ -1,2477 +1,1399 @@
-[
+{
+  "files": [
   {
-    "name": "index.html",
-    "type": "html",
-    "files": [
-      "../src/basis.js",
-      "app.js",
-      "app/css/main.css"
-    ]
+    "name": "docs/index.html",
+    "type": "html"
   },
   {
-    "name": "../src/basis.js",
-    "type": "script",
-    "files": [
-    ]
+    "name": "docs/app/css/main.css",
+    "type": "style"
   },
   {
-    "name": "app.js",
-    "type": "script",
-    "files": [
-      "../src/basis/timer.js",
-      "../src/basis/event.js",
-      "../src/basis/ua.js",
-      "../src/basis/ua/visibility.js",
-      "../src/basis/dom.js",
-      "../src/basis/dom/event.js",
-      "../src/basis/dom/wrapper.js",
-      "../src/basis/cssom.js",
-      "../src/basis/template.js",
-      "../src/basis/html.js",
-      "../src/basis/date.js",
-      "../src/basis/dragdrop.js",
-      "../src/basis/animation.js",
-      "../src/basis/xml.js",
-      "../src/basis/layout.js",
-      "../src/basis/crypt.js",
-      "../src/basis/data.js",
-      "../src/basis/data/dataset.js",
-      "../src/basis/data/generator.js",
-      "../src/basis/data/property.js",
-      "../src/basis/data/index.js",
-      "../src/basis/entity.js",
-      "../src/basis/session.js",
-      "../src/basis/net/ajax.js",
-      "../src/basis/net/soap.js",
-      "../src/basis/ui.js",
-      "../src/basis/ui/button.js",
-      "../src/basis/ui/label.js",
-      "../src/basis/ui/tree.js",
-      "../src/basis/ui/popup.js",
-      "../src/basis/ui/menu.js",
-      "../src/basis/ui/table.js",
-      "../src/basis/ui/scrolltable.js",
-      "../src/basis/ui/window.js",
-      "../src/basis/ui/tabs.js",
-      "../src/basis/ui/calendar.js",
-      "../src/basis/ui/form.js",
-      "../src/basis/ui/scroller.js",
-      "../src/basis/ui/slider.js",
-      "../src/basis/ui/resizer.js",
-      "../src/basis/ui/paginator.js",
-      "../src/basis/ui/pageslider.js",
-      "../src/basis/ui/canvas.js",
-      "../src/basis/ui/graph.js",
-      "../src/basis/format/highlight.js",
-      "app/layout.js"
-    ]
+    "name": "src/basis.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/timer.js",
-    "type": "script",
-    "files": [
-    ]
+    "name": "docs/app.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/event.js",
-    "type": "script",
-    "files": [
-    ]
+    "name": "src/basis/timer.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/ua.js",
-    "type": "script",
-    "files": [
-    ]
+    "name": "src/basis/event.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/ua/visibility.js",
-    "type": "script",
-    "files": [
-    ]
+    "name": "src/basis/ua.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/dom.js",
-    "type": "script",
-    "files": [
-      "../src/basis/ua.js"
-    ]
+    "name": "src/basis/ua/visibility.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/dom/event.js",
-    "type": "script",
-    "files": [
-      "../src/basis/dom.js"
-    ]
+    "name": "src/basis/dom.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/dom/wrapper.js",
-    "type": "script",
-    "files": [
-      "../src/basis/event.js",
-      "../src/basis/data.js"
-    ]
+    "name": "src/basis/dom/event.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/cssom.js",
-    "type": "script",
-    "files": [
-      "../src/basis/dom.js",
-      "../src/basis/dom/event.js"
-    ]
+    "name": "src/basis/dom/wrapper.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/template.js",
-    "type": "script",
-    "files": [
-    ]
+    "name": "src/basis/data.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/html.js",
-    "type": "script",
-    "files": [
-      "../src/basis/dom.js",
-      "../src/basis/template.js"
-    ]
+    "name": "src/basis/cssom.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/date.js",
-    "type": "script",
-    "files": [
-    ]
+    "name": "src/basis/router.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/dragdrop.js",
-    "type": "script",
-    "files": [
-      "../src/basis/event.js",
-      "../src/basis/ua.js",
-      "../src/basis/dom.js",
-      "../src/basis/dom/event.js",
-      "../src/basis/cssom.js",
-      "../src/basis/layout.js"
-    ]
+    "name": "src/basis/app.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/animation.js",
-    "type": "script",
-    "files": [
-      "../src/basis/event.js",
-      "../src/basis/cssom.js",
-      "../src/basis/data/property.js"
-    ]
+    "name": "src/basis/template.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/xml.js",
-    "type": "script",
-    "files": [
-      "../src/basis/ua.js",
-      "../src/basis/dom.js"
-    ]
+    "name": "src/basis/template/html.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/layout.js",
-    "type": "script",
-    "files": [
-      "../src/basis/ua.js",
-      "../src/basis/dom.js",
-      "../src/basis/dom/event.js",
-      "../src/basis/cssom.js",
-      "../src/basis/ui.js"
-    ]
+    "name": "src/basis/l10n.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/crypt.js",
-    "type": "script",
-    "files": [
-    ]
+    "name": "src/basis/template/htmlfgen.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/data.js",
-    "type": "script",
-    "files": [
-      "../src/basis/event.js"
-    ]
+    "name": "src/basis/html.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/data/dataset.js",
-    "type": "script",
-    "files": [
-      "../src/basis/event.js",
-      "../src/basis/data.js"
-    ]
+    "name": "src/basis/date.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/data/generator.js",
-    "type": "script",
-    "files": [
-    ]
+    "name": "src/basis/dragdrop.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/data/property.js",
-    "type": "script",
-    "files": [
-      "../src/basis/timer.js",
-      "../src/basis/event.js",
-      "../src/basis/dom.js",
-      "../src/basis/cssom.js",
-      "../src/basis/data.js"
-    ]
+    "name": "src/basis/layout.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/data/index.js",
-    "type": "script",
-    "files": [
-      "../src/basis/timer.js",
-      "../src/basis/data.js",
-      "../src/basis/data/dataset.js",
-      "../src/basis/data/property.js"
-    ]
+    "name": "src/basis/ui.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/entity.js",
-    "type": "script",
-    "files": [
-      "../src/basis/event.js",
-      "../src/basis/data.js",
-      "../src/basis/data/dataset.js"
-    ]
+    "name": "src/basis/ui/templates/layout/VerticalPanel.tmpl",
+    "type": "template"
   },
   {
-    "name": "../src/basis/session.js",
-    "type": "script",
-    "files": [
-      "../src/basis/event.js"
-    ]
+    "name": "src/basis/ui/templates/layout/VerticalPanelStack.tmpl",
+    "type": "template"
   },
   {
-    "name": "../src/basis/net/ajax.js",
-    "type": "script",
-    "files": [
-      "../src/basis/timer.js",
-      "../src/basis/event.js",
-      "../src/basis/ua.js",
-      "../src/basis/dom/event.js",
-      "../src/basis/data.js",
-      "../src/basis/net/proxy.js"
-    ]
+    "name": "src/basis/animation.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/net/soap.js",
-    "type": "script",
-    "files": [
-      "../src/basis/dom.js",
-      "../src/basis/xml.js",
-      "../src/basis/net.js"
-    ]
+    "name": "src/basis/data/property.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/ui.js",
-    "type": "script",
-    "files": [
-      "../src/basis/timer.js",
-      "../src/basis/l10n.js",
-      "../src/basis/dom/wrapper.js",
-      "../src/basis/cssom.js",
-      "../src/basis/template/html.js"
-    ]
+    "name": "src/basis/xml.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/ui/button.js",
-    "type": "script",
-    "files": [
-      "../src/basis/ui.js",
-      "../src/basis/ui/templates/button/Button.tmpl",
-      "../src/basis/ui/templates/button/ButtonPanel.tmpl",
-      "../src/basis/ui/templates/button/ButtonGroup.tmpl"
-    ]
+    "name": "src/basis/crypt.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/ui/label.js",
-    "type": "script",
-    "files": [
-      "../src/basis/event.js",
-      "../src/basis/dom.js",
-      "../src/basis/data.js",
-      "../src/basis/dom/wrapper.js",
-      "../src/basis/ui.js",
-      "../src/basis/ui/templates/label/state.tmpl",
-      "../src/basis/ui/templates/label/processing.tmpl",
-      "../src/basis/ui/templates/label/error.tmpl",
-      "../src/basis/ui/templates/label/count.tmpl",
-      "../src/basis/ui/templates/label/empty.tmpl",
-      "../src/basis/ui/templates/label/label.tmpl"
-    ]
+    "name": "src/basis/data/dataset.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/ui/tree.js",
-    "type": "script",
-    "files": [
-      "../src/basis/event.js",
-      "../src/basis/dom.js",
-      "../src/basis/dom/event.js",
-      "../src/basis/ui.js",
-      "../src/basis/template.js",
-      "../src/basis/ui/templates/tree/Tree.tmpl",
-      "../src/basis/ui/templates/tree/PartitionNode.tmpl",
-      "../src/basis/ui/templates/tree/Node.tmpl",
-      "../src/basis/ui/templates/tree/Folder.tmpl"
-    ]
+    "name": "src/basis/data/generator.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/ui/popup.js",
-    "type": "script",
-    "files": [
-      "../src/basis/event.js",
-      "../src/basis/dom.js",
-      "../src/basis/dom/event.js",
-      "../src/basis/cssom.js",
-      "../src/basis/layout.js",
-      "../src/basis/ui.js",
-      "../src/basis/ui/templates/popup/Popup.tmpl",
-      "../src/basis/ui/templates/popup/Balloon.tmpl"
-    ]
+    "name": "src/basis/data/index.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/ui/menu.js",
-    "type": "script",
-    "files": [
-      "../src/basis/dom/event.js",
-      "../src/basis/ui.js",
-      "../src/basis/ui/popup.js",
-      "../src/basis/ui/templates/menu/MenuItem.tmpl",
-      "../src/basis/ui/templates/menu/MenuItemSet.tmpl",
-      "../src/basis/ui/templates/menu/PartitionNode.tmpl",
-      "../src/basis/ui/templates/menu/Menu.tmpl"
-    ]
+    "name": "src/basis/data/vector.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/ui/table.js",
-    "type": "script",
-    "files": [
-      "../src/basis/dom.js",
-      "../src/basis/dom/event.js",
-      "../src/basis/dom/wrapper.js",
-      "../src/basis/ui.js",
-      "../src/basis/ui/templates/table/HeaderPartitionNode.tmpl",
-      "../src/basis/ui/templates/table/HeaderCell.tmpl",
-      "../src/basis/ui/templates/table/Header.tmpl",
-      "../src/basis/ui/templates/table/FooterCell.tmpl",
-      "../src/basis/ui/templates/table/Footer.tmpl",
-      "../src/basis/ui/templates/table/Row.tmpl",
-      "../src/basis/ui/templates/table/Body.tmpl",
-      "../src/basis/ui/templates/table/Table.tmpl"
-    ]
+    "name": "src/basis/entity.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/ui/scrolltable.js",
-    "type": "script",
-    "files": [
-      "../src/basis/timer.js",
-      "../src/basis/dom.js",
-      "../src/basis/dom/event.js",
-      "../src/basis/cssom.js",
-      "../src/basis/layout.js",
-      "../src/basis/ui/table.js",
-      "../src/basis/ui/templates/scrolltable/ScrollTable.tmpl"
-    ]
+    "name": "src/basis/session.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/ui/window.js",
-    "type": "script",
-    "files": [
-      "../src/basis/event.js",
-      "../src/basis/dom.js",
-      "../src/basis/dom/event.js",
-      "../src/basis/dom/wrapper.js",
-      "../src/basis/cssom.js",
-      "../src/basis/l10n.js",
-      "../src/basis/ui.js",
-      "../src/basis/ui/button.js",
-      "../src/basis/dragdrop.js",
-      "../src/basis/ui/templates/window/Blocker.tmpl",
-      "../src/basis/ui/templates/window/Window.tmpl",
-      "../src/basis/ui/templates/window/TitleButton.tmpl",
-      "../src/basis/ui/templates/window/ButtonPanel.tmpl"
-    ]
+    "name": "src/basis/net.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/ui/tabs.js",
-    "type": "script",
-    "files": [
-      "../src/basis/event.js",
-      "../src/basis/dom.js",
-      "../src/basis/dom/wrapper.js",
-      "../src/basis/ui.js",
-      "../src/basis/ui/templates/tabs/Tab.tmpl",
-      "../src/basis/ui/templates/tabs/TabGroup.tmpl",
-      "../src/basis/ui/templates/tabs/TabControl.tmpl",
-      "../src/basis/ui/templates/tabs/Page.tmpl",
-      "../src/basis/ui/templates/tabs/PageControl.tmpl",
-      "../src/basis/ui/templates/tabs/TabSheet.tmpl",
-      "../src/basis/ui/templates/tabs/AccordionControl.tmpl",
-      "../src/basis/ui/templates/tabs/TabSheetControl.tmpl"
-    ]
+    "name": "src/basis/net/rpc.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/ui/calendar.js",
-    "type": "script",
-    "files": [
-      "../src/basis/event.js",
-      "../src/basis/date.js",
-      "../src/basis/dom.js",
-      "../src/basis/dom/event.js",
-      "../src/basis/data/property.js",
-      "../src/basis/ui.js",
-      "../src/basis/l10n.js",
-      "../src/basis/ui/templates/calendar/Node.tmpl",
-      "../src/basis/ui/templates/calendar/Section.tmpl",
-      "../src/basis/ui/templates/calendar/SectionMonth.tmpl",
-      "../src/basis/ui/templates/calendar/Calendar.tmpl"
-    ]
+    "name": "src/basis/net/service.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/ui/form.js",
-    "type": "script",
-    "files": [
-      "../src/basis/event.js",
-      "../src/basis/dom.js",
-      "../src/basis/ui.js",
-      "../src/basis/ui/field.js",
-      "../src/basis/ui/templates/form/FormContent.tmpl",
-      "../src/basis/ui/templates/form/Form.tmpl"
-    ]
+    "name": "src/basis/net/soap.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/ui/scroller.js",
-    "type": "script",
-    "files": [
-      "../src/basis/event.js",
-      "../src/basis/dom.js",
-      "../src/basis/dom/event.js",
-      "../src/basis/cssom.js",
-      "../src/basis/ui.js",
-      "../src/basis/animation.js",
-      "../src/basis/ui/templates/scroller/Scrollbar.tmpl",
-      "../src/basis/ui/templates/scroller/ScrollPanel.tmpl",
-      "../src/basis/ui/templates/scroller/ScrollGalleryItem.tmpl"
-    ]
+    "name": "src/basis/net/upload.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/ui/slider.js",
-    "type": "script",
-    "files": [
-      "../src/basis/event.js",
-      "../src/basis/dom.js",
-      "../src/basis/dom/event.js",
-      "../src/basis/layout.js",
-      "../src/basis/dragdrop.js",
-      "../src/basis/ui/templates/slider/Mark.tmpl",
-      "../src/basis/ui/templates/slider/MarkLayer.tmpl",
-      "../src/basis/ui/templates/slider/Slider.tmpl",
-      "../src/basis/ui/templates/slider/MarkLayers.tmpl"
-    ]
+    "name": "src/basis/ui/button.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/ui/resizer.js",
-    "type": "script",
-    "files": [
-      "../src/basis/dom.js",
-      "../src/basis/cssom.js",
-      "../src/basis/dragdrop.js",
-      "../src/basis/ui.js",
-      "../src/basis/ui/templates/resizer/style.css"
-    ]
+    "name": "src/basis/ui/templates/button/Button.tmpl",
+    "type": "template"
   },
   {
-    "name": "../src/basis/ui/paginator.js",
-    "type": "script",
-    "files": [
-      "../src/basis/event.js",
-      "../src/basis/dom/event.js",
-      "../src/basis/dom/wrapper.js",
-      "../src/basis/dragdrop.js",
-      "../src/basis/ui.js",
-      "../src/basis/ui/templates/paginator/PaginatorNode.tmpl",
-      "../src/basis/ui/templates/paginator/Paginator.tmpl"
-    ]
+    "name": "src/basis/ui/templates/button/ButtonPanel.tmpl",
+    "type": "template"
   },
   {
-    "name": "../src/basis/ui/pageslider.js",
-    "type": "script",
-    "files": [
-      "../src/basis/dom.js",
-      "../src/basis/cssom.js",
-      "../src/basis/ui.js",
-      "../src/basis/ui/tabs.js",
-      "../src/basis/ui/scroller.js",
-      "../src/basis/ui/templates/pageslider/PageSlider.tmpl"
-    ]
+    "name": "src/basis/ui/templates/button/ButtonGroup.tmpl",
+    "type": "template"
   },
   {
-    "name": "../src/basis/ui/canvas.js",
-    "type": "script",
-    "files": [
-      "../src/basis/event.js",
-      "../src/basis/dom.js",
-      "../src/basis/dom/event.js",
-      "../src/basis/dom/wrapper.js",
-      "../src/basis/ui.js"
-    ]
+    "name": "src/basis/ui/label.js",
+    "type": "script"
   },
   {
-    "name": "../src/basis/ui/graph.js",
-    "type": "script",
-    "files": [
-      "../src/basis/dom.js",
-      "../src/basis/dom/event.js",
-      "../src/basis/data.js",
-      "../src/basis/dom/wrapper.js",
-      "../src/basis/ui.js",
-      "../src/basis/ui/canvas.js"
-    ]
+    "name": "src/basis/ui/templates/label/label.tmpl",
+    "type": "template"
   },
   {
-    "name": "../src/basis/format/highlight.js",
-    "type": "script",
-    "files": [
-      "../src/basis/ui.js",
-      "../src/basis/format/templates/SourceCodeNode.css",
-      "../src/basis/format/templates/SourceCodeNode.tmpl"
-    ]
+    "name": "src/basis/ui/templates/label/state.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/label/processing.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/label/error.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/label/count.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/label/empty.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/tree.js",
+    "type": "script"
+  },
+  {
+    "name": "src/basis/ui/templates/tree/Tree.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/tree/PartitionNode.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/tree/Node.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/tree/Folder.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/popup.js",
+    "type": "script"
+  },
+  {
+    "name": "src/basis/ui/templates/popup/Popup.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/popup/Balloon.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/popup/popupManager.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/menu.js",
+    "type": "script"
+  },
+  {
+    "name": "src/basis/ui/templates/menu/MenuItem.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/menu/MenuItemSet.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/menu/PartitionNode.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/menu/Menu.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/table.js",
+    "type": "script"
+  },
+  {
+    "name": "src/basis/ui/templates/table/Table.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/table/Body.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/table/Row.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/table/Header.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/table/HeaderPartitionNode.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/table/HeaderCell.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/table/FooterCell.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/table/Footer.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/scrolltable.js",
+    "type": "script"
+  },
+  {
+    "name": "src/basis/ui/templates/scrolltable/ScrollTable.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/window.js",
+    "type": "script"
+  },
+  {
+    "name": "src/basis/ui/templates/window/Blocker.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/window/Window.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/window/TitleButton.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/window/ButtonPanel.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/window/windowManager.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/tabs.js",
+    "type": "script"
+  },
+  {
+    "name": "src/basis/ui/templates/tabs/TabControl.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/tabs/TabGroup.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/tabs/Tab.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/tabs/PageControl.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/tabs/Page.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/tabs/TabSheetControl.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/tabs/TabSheet.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/tabs/AccordionControl.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/calendar.js",
+    "type": "script"
+  },
+  {
+    "name": "src/basis/ui/templates/calendar/Calendar.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/calendar/Section.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/calendar/SectionMonth.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/calendar/Node.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/form.js",
+    "type": "script"
+  },
+  {
+    "name": "src/basis/ui/field.js",
+    "type": "script"
+  },
+  {
+    "name": "src/basis/ui/templates/field/Example.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/field/Description.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/field/Counter.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/field/Field.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/field/File.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/field/Hidden.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/field/Text.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/field/Password.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/field/Textarea.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/field/Checkbox.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/field/Label.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/field/RadioGroup.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/field/RadioGroupItem.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/field/CheckGroup.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/field/CheckGroupItem.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/field/Select.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/field/SelectItem.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/field/Combobox.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/field/ComboboxItem.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/field/ComboboxDropdownList.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/field/MatchInput.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/form/Form.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/form/FormContent.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/scroller.js",
+    "type": "script"
+  },
+  {
+    "name": "src/basis/ui/templates/scroller/Scrollbar.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/scroller/ScrollPanel.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/scroller/ScrollGalleryItem.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/slider.js",
+    "type": "script"
+  },
+  {
+    "name": "src/basis/ui/templates/slider/Slider.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/slider/MarkLayers.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/slider/MarkLayer.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/slider/Mark.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/resizer.js",
+    "type": "script"
+  },
+  {
+    "name": "src/basis/ui/templates/resizer/style.css",
+    "type": "style"
+  },
+  {
+    "name": "src/basis/ui/paginator.js",
+    "type": "script"
+  },
+  {
+    "name": "src/basis/ui/templates/paginator/Paginator.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/paginator/PaginatorNode.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/pageslider.js",
+    "type": "script"
+  },
+  {
+    "name": "src/basis/ui/templates/pageslider/PageSlider.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/canvas.js",
+    "type": "script"
+  },
+  {
+    "name": "src/basis/ui/templates/canvas/Canvas.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/graph.js",
+    "type": "script"
+  },
+  {
+    "name": "src/basis/ui/templates/graph/Graph.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/graph/GraphSelection.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/ui/templates/graph/GraphViewer.tmpl",
+    "type": "template"
+  },
+  {
+    "name": "src/basis/format/highlight.js",
+    "type": "script"
+  },
+  {
+    "name": "src/basis/format/templates/SourceCodeNode.css",
+    "type": "style"
+  },
+  {
+    "name": "src/basis/format/templates/SourceCodeNode.tmpl",
+    "type": "template"
   },
   {
     "name": "app/layout.js",
-    "type": "script",
-    "files": [
-      "app/core.js",
-      "app/layout/prototypeMapPopup.js",
-      "app/layout/targetHeader.js",
-      "app/layout/targetContent.js",
-      "app/layout/navTree.js",
-      "app/layout/searchTree.js",
-      "app/layout/searchInput.js"
-    ]
+    "type": "script"
   },
   {
-    "name": "../src/basis/net/proxy.js",
-    "type": "script",
-    "files": [
-      "../src/basis/event.js",
-      "../src/basis/data.js"
-    ]
+    "name": "src/basis/ui/templates/layout/VerticalPanel.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/net.js",
-    "type": "script",
-    "files": [
-      "../src/basis/event.js",
-      "../src/basis/data.js",
-      "../src/basis/timer.js"
-    ]
+    "name": "src/basis/ui/templates/layout/VerticalPanelStack.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/l10n.js",
-    "type": "script",
-    "files": [
-    ]
+    "name": "src/basis/ui/templates/button/Button.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/template/html.js",
-    "type": "script",
-    "files": [
-      "../src/basis/dom.js",
-      "../src/basis/dom/event.js",
-      "../src/basis/l10n.js",
-      "../src/basis/template.js"
-    ]
+    "name": "src/basis/ui/templates/button/ButtonGroup.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/button/Button.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/button/Button.css"
-    ]
+    "name": "src/basis/ui/templates/tree/Tree.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/button/ButtonPanel.tmpl",
-    "type": "template",
-    "files": [
-    ]
+    "name": "src/basis/ui/templates/tree/PartitionNode.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/button/ButtonGroup.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/button/ButtonGroup.css"
-    ]
+    "name": "src/basis/ui/templates/tree/Node.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/label/state.tmpl",
-    "type": "template",
-    "files": [
-    ]
+    "name": "src/basis/ui/templates/tree/Node_Expander.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/label/processing.tmpl",
-    "type": "template",
-    "files": [
-    ]
+    "name": "src/basis/ui/templates/tree/Folder.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/label/error.tmpl",
-    "type": "template",
-    "files": [
-    ]
+    "name": "src/basis/ui/templates/popup/Popup.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/label/count.tmpl",
-    "type": "template",
-    "files": [
-    ]
+    "name": "src/basis/ui/templates/popup/Balloon.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/label/empty.tmpl",
-    "type": "template",
-    "files": [
-    ]
+    "name": "src/basis/ui/templates/menu/MenuItem.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/label/label.tmpl",
-    "type": "template",
-    "files": [
-    ]
+    "name": "src/basis/ui/templates/menu/PartitionNode.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/tree/Tree.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/tree/Tree.css"
-    ]
+    "name": "src/basis/ui/templates/menu/Menu.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/tree/PartitionNode.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/tree/PartitionNode.css"
-    ]
+    "name": "src/basis/ui/templates/table/Table.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/tree/Node.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/tree/Node.css"
-    ]
+    "name": "src/basis/ui/templates/table/Body.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/tree/Folder.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/tree/Node.css",
-      "../src/basis/ui/templates/tree/Node_Expander.css",
-      "../src/basis/ui/templates/tree/Folder.css"
-    ]
+    "name": "src/basis/ui/templates/table/Row.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/popup/Popup.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/popup/Popup.css"
-    ]
+    "name": "src/basis/ui/templates/table/HeaderCell.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/popup/Balloon.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/popup/Balloon.css"
-    ]
+    "name": "src/basis/ui/templates/table/FooterCell.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/menu/MenuItem.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/menu/MenuItem.css"
-    ]
+    "name": "src/basis/ui/templates/scrolltable/ScrollTable.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/menu/MenuItemSet.tmpl",
-    "type": "template",
-    "files": [
-    ]
+    "name": "src/basis/ui/templates/window/Blocker.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/menu/PartitionNode.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/menu/PartitionNode.css"
-    ]
+    "name": "src/basis/ui/templates/window/Window.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/menu/Menu.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/menu/Menu.css"
-    ]
+    "name": "src/basis/ui/templates/window/TitleButton.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/table/HeaderPartitionNode.tmpl",
-    "type": "template",
-    "files": [
-    ]
+    "name": "src/basis/ui/templates/window/ButtonPanel.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/table/HeaderCell.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/table/HeaderCell.css"
-    ]
+    "name": "src/basis/ui/templates/tabs/TabControl.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/table/Header.tmpl",
-    "type": "template",
-    "files": [
-    ]
+    "name": "src/basis/ui/templates/tabs/TabGroup.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/table/FooterCell.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/table/FooterCell.css"
-    ]
+    "name": "src/basis/ui/templates/tabs/Tab.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/table/Footer.tmpl",
-    "type": "template",
-    "files": [
-    ]
+    "name": "src/basis/ui/templates/tabs/PageControl.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/table/Row.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/table/Row.css"
-    ]
+    "name": "src/basis/ui/templates/tabs/Page.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/table/Body.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/table/Body.css"
-    ]
+    "name": "src/basis/ui/templates/tabs/TabSheetControl.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/table/Table.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/table/Table.css"
-    ]
+    "name": "src/basis/ui/templates/tabs/AccordionControl.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/scrolltable/ScrollTable.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/table/Table.css",
-      "../src/basis/ui/templates/scrolltable/ScrollTable.css"
-    ]
+    "name": "src/basis/ui/templates/calendar/Calendar.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/window/Blocker.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/window/Blocker.css"
-    ]
+    "name": "src/basis/ui/templates/calendar/Section.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/window/Window.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/window/Window.css"
-    ]
+    "name": "src/basis/ui/templates/calendar/SectionMonth.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/window/TitleButton.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/window/TitleButton.css"
-    ]
+    "name": "src/basis/ui/templates/calendar/Node.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/window/ButtonPanel.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/window/ButtonPanel.css"
-    ]
+    "name": "src/basis/ui/templates/field/Field.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/tabs/Tab.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/tabs/Tab.css"
-    ]
+    "name": "src/basis/ui/templates/field/Combobox.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/tabs/TabGroup.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/tabs/TabGroup.css"
-    ]
+    "name": "src/basis/ui/templates/form/FormContent.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/tabs/TabControl.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/tabs/TabControl.css"
-    ]
+    "name": "src/basis/ui/templates/scroller/Scrollbar.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/tabs/Page.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/tabs/Page.css"
-    ]
+    "name": "src/basis/ui/templates/scroller/ScrollPanel.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/tabs/PageControl.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/tabs/PageControl.css"
-    ]
+    "name": "src/basis/ui/templates/slider/Slider.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/tabs/TabSheet.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/tabs/Tab.css",
-      "../src/basis/ui/templates/tabs/Page.css"
-    ]
+    "name": "src/basis/ui/templates/slider/MarkLayers.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/tabs/AccordionControl.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/tabs/AccordionControl.css"
-    ]
+    "name": "src/basis/ui/templates/slider/MarkLayer.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/tabs/TabSheetControl.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/tabs/TabSheetControl.css",
-      "../src/basis/ui/templates/tabs/TabControl.css",
-      "../src/basis/ui/templates/tabs/PageControl.css"
-    ]
+    "name": "src/basis/ui/templates/slider/Mark.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/calendar/Node.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/calendar/Node.css"
-    ]
+    "name": "src/basis/ui/templates/paginator/Paginator.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/calendar/Section.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/calendar/Section.css"
-    ]
+    "name": "src/basis/ui/templates/paginator/PaginatorNode.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/calendar/SectionMonth.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/calendar/Section.css",
-      "../src/basis/ui/templates/calendar/SectionMonth.css"
-    ]
+    "name": "src/basis/ui/templates/pageslider/PageSlider.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/calendar/Calendar.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/calendar/Calendar.css"
-    ]
+    "name": "src/basis/ui/templates/graph/Graph.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/field.js",
-    "type": "script",
-    "files": [
-      "../src/basis/l10n.js",
-      "../src/basis/event.js",
-      "../src/basis/dom.js",
-      "../src/basis/dom/event.js",
-      "../src/basis/dom/wrapper.js",
-      "../src/basis/data/property.js",
-      "../src/basis/ui.js",
-      "../src/basis/ui/popup.js",
-      "../src/basis/ui/templates/field/Field.tmpl",
-      "../src/basis/ui/templates/field/Example.tmpl",
-      "../src/basis/ui/templates/field/Description.tmpl",
-      "../src/basis/ui/templates/field/File.tmpl",
-      "../src/basis/ui/templates/field/Hidden.tmpl",
-      "../src/basis/ui/templates/field/Text.tmpl",
-      "../src/basis/ui/templates/field/Password.tmpl",
-      "../src/basis/ui/templates/field/Textarea.tmpl",
-      "../src/basis/ui/templates/field/Counter.tmpl",
-      "../src/basis/ui/templates/field/Checkbox.tmpl",
-      "../src/basis/ui/templates/field/Label.tmpl",
-      "../src/basis/ui/templates/field/RadioGroup.tmpl",
-      "../src/basis/ui/templates/field/RadioGroupItem.tmpl",
-      "../src/basis/ui/templates/field/CheckGroup.tmpl",
-      "../src/basis/ui/templates/field/CheckGroupItem.tmpl",
-      "../src/basis/ui/templates/field/Select.tmpl",
-      "../src/basis/ui/templates/field/SelectItem.tmpl",
-      "../src/basis/ui/templates/field/ComboboxItem.tmpl",
-      "../src/basis/ui/templates/field/ComboboxDropdownList.tmpl",
-      "../src/basis/ui/templates/field/Combobox.tmpl",
-      "../src/basis/ui/templates/field/MatchInput.tmpl"
-    ]
+    "name": "src/basis/ui/templates/graph/GraphSelection.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/form/FormContent.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/form/FormContent.css"
-    ]
+    "name": "src/basis/ui/templates/graph/GraphViewer.css",
+    "type": "style"
   },
   {
-    "name": "../src/basis/ui/templates/form/Form.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/form/FormContent.css"
-    ]
+    "name": "docs/app/css/img/node_class_big.png",
+    "type": "image"
   },
   {
-    "name": "../src/basis/ui/templates/scroller/Scrollbar.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/scroller/Scrollbar.css"
-    ]
+    "name": "docs/app/css/img/node_property_big.png",
+    "type": "image"
   },
   {
-    "name": "../src/basis/ui/templates/scroller/ScrollPanel.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/scroller/ScrollPanel.css"
-    ]
+    "name": "docs/app/css/img/node_function_big.png",
+    "type": "image"
   },
   {
-    "name": "../src/basis/ui/templates/scroller/ScrollGalleryItem.tmpl",
-    "type": "template",
-    "files": [
-    ]
+    "name": "docs/app/css/img/node_module_big.png",
+    "type": "image"
   },
   {
-    "name": "../src/basis/ui/templates/slider/Mark.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/slider/Mark.css"
-    ]
+    "name": "docs/app/css/img/node_const_big.png",
+    "type": "image"
   },
   {
-    "name": "../src/basis/ui/templates/slider/MarkLayer.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/slider/MarkLayer.css"
-    ]
+    "name": "docs/app/css/img/node_event.png",
+    "type": "image"
   },
   {
-    "name": "../src/basis/ui/templates/slider/Slider.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/slider/Slider.css"
-    ]
+    "name": "docs/app/css/img/tab_bg_bottom.png",
+    "type": "image"
   },
   {
-    "name": "../src/basis/ui/templates/slider/MarkLayers.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/slider/MarkLayers.css"
-    ]
+    "name": "docs/app/css/img/tab_bg_top.png",
+    "type": "image"
   },
   {
-    "name": "../src/basis/ui/templates/resizer/style.css",
-    "type": "style",
-    "files": [
-    ]
+    "name": "src/basis/ui/templates/button/res/button_transparent_bg.png",
+    "type": "image"
   },
   {
-    "name": "../src/basis/ui/templates/paginator/PaginatorNode.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/paginator/PaginatorNode.css"
-    ]
+    "name": "src/basis/ui/templates/tree/res/page.gif",
+    "type": "image"
   },
   {
-    "name": "../src/basis/ui/templates/paginator/Paginator.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/paginator/Paginator.css"
-    ]
+    "name": "src/basis/ui/templates/tree/res/minus.gif",
+    "type": "image"
   },
   {
-    "name": "../src/basis/ui/templates/pageslider/PageSlider.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/pageslider/PageSlider.css"
-    ]
+    "name": "src/basis/ui/templates/tree/res/plus.gif",
+    "type": "image"
   },
   {
-    "name": "../src/basis/format/templates/SourceCodeNode.css",
-    "type": "style",
-    "files": [
-    ]
+    "name": "src/basis/ui/templates/tree/res/folder_open.gif",
+    "type": "image"
   },
   {
-    "name": "../src/basis/format/templates/SourceCodeNode.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/format/templates/SourceCodeNode.css"
-    ]
+    "name": "src/basis/ui/templates/tree/res/folder_close.gif",
+    "type": "image"
   },
   {
-    "name": "app/core.js",
-    "type": "script",
-    "files": [
-    ]
+    "name": "src/basis/ui/templates/popup/res/corners.png",
+    "type": "image"
   },
   {
-    "name": "app/layout/prototypeMapPopup.js",
-    "type": "script",
-    "files": [
-      "app/views/prototype/prototype.js",
-      "app/layout/targetContent.js",
-      "app/layout/template/prototypeMapPopupPanel.tmpl",
-      "app/layout/template/prototypeMapPopupPanelItem.tmpl"
-    ]
+    "name": "src/basis/ui/templates/popup/res/tails.png",
+    "type": "image"
   },
   {
-    "name": "app/layout/targetHeader.js",
-    "type": "script",
-    "files": [
-      "app/views/prototype/prototype.js",
-      "app/layout/prototypeMapPopup.js",
-      "app/layout/template/targetHeader.tmpl"
-    ]
+    "name": "src/basis/ui/templates/popup/res/repeat-x.png",
+    "type": "image"
   },
   {
-    "name": "app/layout/targetContent.js",
-    "type": "script",
-    "files": [
-      "app/views/inheritance/inheritance.js",
-      "app/views/sourceCode/sourceCode.js",
-      "app/views/templateView/templateView.js",
-      "app/views/prototype/prototype.js",
-      "app/views/namespaceMap/namespaceMap.js",
-      "app/views/description/description.js",
-      "app/layout/template/targetContent.tmpl"
-    ]
+    "name": "src/basis/ui/templates/popup/res/repeat-y.png",
+    "type": "image"
   },
   {
-    "name": "app/layout/navTree.js",
-    "type": "script",
-    "files": [
-      "app/ext/docTree.js"
-    ]
+    "name": "src/basis/ui/templates/menu/res/overlay.png",
+    "type": "image"
   },
   {
-    "name": "app/layout/searchTree.js",
-    "type": "script",
-    "files": [
-      "app/core.js",
-      "app/ext/docTree.js"
-    ]
+    "name": "src/basis/ui/templates/menu/res/menuitem_selected_icon.gif",
+    "type": "image"
   },
   {
-    "name": "app/layout/searchInput.js",
-    "type": "script",
-    "files": [
-      "app/layout/template/searchInput.tmpl"
-    ]
+    "name": "src/basis/ui/templates/table/res/minus.gif",
+    "type": "image"
   },
   {
-    "name": "../src/basis/ui/templates/field/Field.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/field/Field.css"
-    ]
+    "name": "src/basis/ui/templates/table/res/plus.gif",
+    "type": "image"
   },
   {
-    "name": "../src/basis/ui/templates/field/Example.tmpl",
-    "type": "template",
-    "files": [
-    ]
+    "name": "src/basis/ui/templates/table/res/bg.gif",
+    "type": "image"
   },
   {
-    "name": "../src/basis/ui/templates/field/Description.tmpl",
-    "type": "template",
-    "files": [
-    ]
+    "name": "src/basis/ui/templates/table/res/hline_left.gif",
+    "type": "image"
   },
   {
-    "name": "../src/basis/ui/templates/field/File.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/field/Field.css"
-    ]
+    "name": "src/basis/ui/templates/table/res/hline_right.gif",
+    "type": "image"
   },
   {
-    "name": "../src/basis/ui/templates/field/Hidden.tmpl",
-    "type": "template",
-    "files": [
-    ]
+    "name": "src/basis/ui/templates/table/res/hover_bg.gif",
+    "type": "image"
   },
   {
-    "name": "../src/basis/ui/templates/field/Text.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/field/Field.css"
-    ]
+    "name": "src/basis/ui/templates/table/res/hover_hline.gif",
+    "type": "image"
   },
   {
-    "name": "../src/basis/ui/templates/field/Password.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/field/Field.css"
-    ]
+    "name": "src/basis/ui/templates/table/res/selected_bg.gif",
+    "type": "image"
   },
   {
-    "name": "../src/basis/ui/templates/field/Textarea.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/field/Field.css"
-    ]
+    "name": "src/basis/ui/templates/table/res/order_asc.gif",
+    "type": "image"
   },
   {
-    "name": "../src/basis/ui/templates/field/Counter.tmpl",
-    "type": "template",
-    "files": [
-    ]
+    "name": "src/basis/ui/templates/table/res/order_desc.gif",
+    "type": "image"
   },
   {
-    "name": "../src/basis/ui/templates/field/Checkbox.tmpl",
-    "type": "template",
-    "files": [
-    ]
+    "name": "src/basis/ui/templates/table/res/footer_bg.gif",
+    "type": "image"
   },
   {
-    "name": "../src/basis/ui/templates/field/Label.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/field/Field.css"
-    ]
+    "name": "src/basis/ui/templates/window/res/mate_white.png",
+    "type": "image"
   },
   {
-    "name": "../src/basis/ui/templates/field/RadioGroup.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/field/Field.css"
-    ]
+    "name": "src/basis/ui/templates/window/res/corners.png",
+    "type": "image"
   },
   {
-    "name": "../src/basis/ui/templates/field/RadioGroupItem.tmpl",
-    "type": "template",
-    "files": [
-    ]
+    "name": "src/basis/ui/templates/window/res/repeat-x.png",
+    "type": "image"
   },
   {
-    "name": "../src/basis/ui/templates/field/CheckGroup.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/field/Field.css"
-    ]
+    "name": "src/basis/ui/templates/window/res/repeat-y.png",
+    "type": "image"
   },
   {
-    "name": "../src/basis/ui/templates/field/CheckGroupItem.tmpl",
-    "type": "template",
-    "files": [
-    ]
+    "name": "src/basis/ui/templates/window/res/button_close.png",
+    "type": "image"
   },
   {
-    "name": "../src/basis/ui/templates/field/Select.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/field/Field.css"
-    ]
+    "name": "src/basis/ui/templates/tabs/res/not_active_border.gif",
+    "type": "image"
   },
   {
-    "name": "../src/basis/ui/templates/field/SelectItem.tmpl",
-    "type": "template",
-    "files": [
-    ]
+    "name": "src/basis/ui/templates/tabs/res/not_active_bg.gif",
+    "type": "image"
   },
   {
-    "name": "../src/basis/ui/templates/field/ComboboxItem.tmpl",
-    "type": "template",
-    "files": [
-    ]
+    "name": "src/basis/ui/templates/field/res/dropdown_bg.gif",
+    "type": "image"
   },
   {
-    "name": "../src/basis/ui/templates/field/ComboboxDropdownList.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/popup/Popup.css"
-    ]
+    "name": "src/basis/ui/templates/field/res/dropdown_arrow.gif",
+    "type": "image"
   },
   {
-    "name": "../src/basis/ui/templates/field/Combobox.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/field/Combobox.css",
-      "../src/basis/ui/templates/field/Field.css"
-    ]
+    "name": "src/basis/ui/templates/field/res/dropdown_gray_bg.gif",
+    "type": "image"
   },
   {
-    "name": "../src/basis/ui/templates/field/MatchInput.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/field/Field.css"
-    ]
+    "name": "src/basis/ui/templates/slider/res/slider.png",
+    "type": "image"
   },
   {
-    "name": "app/views/prototype/prototype.js",
-    "type": "script",
-    "files": [
-      "app/core.js",
-      "app/ext/view.js",
-      "app/ext/jsdoc.js",
-      "app/views/prototype/template/prototypeItem.tmpl",
-      "app/views/prototype/template/prototypeMethod.tmpl",
-      "app/views/prototype/template/prototypeSpecialMethod.tmpl",
-      "app/views/prototype/template/prototypeView.tmpl",
-      "app/views/prototype/template/prototypeViewGroup.tmpl"
-    ]
-  },
-  {
-    "name": "app/layout/template/prototypeMapPopupPanel.tmpl",
-    "type": "template",
-    "files": [
-      "app/layout/template/prototypeMapPopupPanel.css"
-    ]
-  },
-  {
-    "name": "app/layout/template/prototypeMapPopupPanelItem.tmpl",
-    "type": "template",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/layout/template/targetHeader.tmpl",
-    "type": "template",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/views/inheritance/inheritance.js",
-    "type": "script",
-    "files": [
-      "app/core.js",
-      "app/ext/view.js",
-      "app/views/inheritance/template/inheritanceItem.tmpl",
-      "app/views/inheritance/template/inheritanceView.tmpl",
-      "app/views/inheritance/template/inheritanceGroup.tmpl"
-    ]
-  },
-  {
-    "name": "app/views/sourceCode/sourceCode.js",
-    "type": "script",
-    "files": [
-      "../src/basis/dom/wrapper.js",
-      "../src/basis/format/highlight.js",
-      "app/ext/view.js",
-      "app/views/sourceCode/template/sourceCode.tmpl"
-    ]
-  },
-  {
-    "name": "app/views/templateView/templateView.js",
-    "type": "script",
-    "files": [
-      "app/ext/view.js",
-      "app/views/templateView/templatePanel.js",
-      "app/views/templateView/template/templateView.tmpl"
-    ]
-  },
-  {
-    "name": "app/views/namespaceMap/namespaceMap.js",
-    "type": "script",
-    "files": [
-      "app/core.js",
-      "app/ext/view.js",
-      "app/views/namespaceMap/template/namespaceNode.tmpl",
-      "app/views/namespaceMap/template/namespaceMap.tmpl"
-    ]
-  },
-  {
-    "name": "app/views/description/description.js",
-    "type": "script",
-    "files": [
-      "app/ext/view.js",
-      "app/ext/jsdoc.js",
-      "app/views/description/template/jsdocView.tmpl"
-    ]
-  },
-  {
-    "name": "app/layout/template/targetContent.tmpl",
-    "type": "template",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/ext/docTree.js",
-    "type": "script",
-    "files": [
-      "app/core.js",
-      "app/ext/docTree/template/docTreePartitionNode.tmpl",
-      "app/ext/docTree/template/docTreeNode.tmpl",
-      "app/ext/docTree/template/docSearchTreeNode.tmpl",
-      "app/ext/docTree/template/docTreeFolder.tmpl"
-    ]
-  },
-  {
-    "name": "app/layout/template/searchInput.tmpl",
-    "type": "template",
-    "files": [
-      "app/layout/template/searchInput.css"
-    ]
-  },
-  {
-    "name": "app/ext/view.js",
-    "type": "script",
-    "files": [
-      "../src/basis/dom/wrapper.js",
-      "app/core.js",
-      "app/ext/view/template/viewOption.tmpl",
-      "app/ext/view/template/viewOptionList.tmpl"
-    ]
-  },
-  {
-    "name": "app/ext/jsdoc.js",
-    "type": "script",
-    "files": [
-      "app/core.js",
-      "app/ext/jsdoc/template/jsdocLinksPanel.tmpl",
-      "app/ext/jsdoc/template/jsdocLinksPanelItem.tmpl",
-      "app/ext/jsdoc/template/jsdocPanel.tmpl"
-    ]
-  },
-  {
-    "name": "app/views/prototype/template/prototypeItem.tmpl",
-    "type": "template",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/views/prototype/template/prototypeMethod.tmpl",
-    "type": "template",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/views/prototype/template/prototypeSpecialMethod.tmpl",
-    "type": "template",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/views/prototype/template/prototypeView.tmpl",
-    "type": "template",
-    "files": [
-      "app/views/prototype/template/prototypeView.css"
-    ]
-  },
-  {
-    "name": "app/views/prototype/template/prototypeViewGroup.tmpl",
-    "type": "template",
-    "files": [
-      "app/views/prototype/template/prototypeViewGroup.css"
-    ]
-  },
-  {
-    "name": "app/views/inheritance/template/inheritanceItem.tmpl",
-    "type": "template",
-    "files": [
-      "app/views/inheritance/template/inheritanceItem.css"
-    ]
-  },
-  {
-    "name": "app/views/inheritance/template/inheritanceView.tmpl",
-    "type": "template",
-    "files": [
-      "app/views/inheritance/template/inheritanceView.css"
-    ]
-  },
-  {
-    "name": "app/views/inheritance/template/inheritanceGroup.tmpl",
-    "type": "template",
-    "files": [
-      "app/views/inheritance/template/inheritanceGroup.css"
-    ]
-  },
-  {
-    "name": "app/views/sourceCode/template/sourceCode.tmpl",
-    "type": "template",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/views/templateView/templatePanel.js",
-    "type": "script",
-    "files": [
-      "app/views/templateView/buildTemplateTree.js",
-      "app/views/templateView/template/bindingsPanel.tmpl",
-      "app/views/templateView/template/bindingsPanelItem.tmpl",
-      "app/views/templateView/template/actionsPanel.tmpl",
-      "app/views/templateView/template/actionsPanelItem.tmpl",
-      "app/views/templateView/template/templatePanel.tmpl"
-    ]
-  },
-  {
-    "name": "app/views/templateView/template/templateView.tmpl",
-    "type": "template",
-    "files": [
-      "app/views/templateView/template/templateView.css"
-    ]
-  },
-  {
-    "name": "app/views/namespaceMap/template/namespaceNode.tmpl",
-    "type": "template",
-    "files": [
-      "app/views/namespaceMap/template/namespaceNode.css"
-    ]
-  },
-  {
-    "name": "app/views/namespaceMap/template/namespaceMap.tmpl",
-    "type": "template",
-    "files": [
-      "app/views/namespaceMap/template/namespaceMap.css"
-    ]
-  },
-  {
-    "name": "app/views/description/template/jsdocView.tmpl",
-    "type": "template",
-    "files": [
-      "app/views/description/template/jsdocView.css"
-    ]
-  },
-  {
-    "name": "app/ext/docTree/template/docTreePartitionNode.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/tree/PartitionNode.css",
-      "app/ext/docTree/template/docTreePartitionNode.css"
-    ]
-  },
-  {
-    "name": "app/ext/docTree/template/docTreeNode.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/tree/Node.css",
-      "app/ext/docTree/template/docTreeNode.css"
-    ]
-  },
-  {
-    "name": "app/ext/docTree/template/docSearchTreeNode.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/tree/Node.css",
-      "app/ext/docTree/template/docTreeNode.css",
-      "app/ext/docTree/template/docSearchTreeNode.css"
-    ]
-  },
-  {
-    "name": "app/ext/docTree/template/docTreeFolder.tmpl",
-    "type": "template",
-    "files": [
-      "../src/basis/ui/templates/tree/Node.css",
-      "../src/basis/ui/templates/tree/Node_Expander.css",
-      "../src/basis/ui/templates/tree/Folder.css",
-      "app/ext/docTree/template/docTreeNode.css"
-    ]
-  },
-  {
-    "name": "app/ext/view/template/viewOption.tmpl",
-    "type": "template",
-    "files": [
-      "app/ext/view/template/viewOption.css"
-    ]
-  },
-  {
-    "name": "app/ext/view/template/viewOptionList.tmpl",
-    "type": "template",
-    "files": [
-      "app/ext/view/template/viewOptionList.css"
-    ]
-  },
-  {
-    "name": "app/ext/jsdoc/template/jsdocLinksPanel.tmpl",
-    "type": "template",
-    "files": [
-      "app/ext/jsdoc/template/jsdocLinksPanel.css"
-    ]
-  },
-  {
-    "name": "app/ext/jsdoc/template/jsdocLinksPanelItem.tmpl",
-    "type": "template",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/ext/jsdoc/template/jsdocPanel.tmpl",
-    "type": "template",
-    "files": [
-      "app/ext/jsdoc/template/jsdocPanel.css"
-    ]
-  },
-  {
-    "name": "app/views/templateView/buildTemplateTree.js",
-    "type": "script",
-    "files": [
-      "app/views/templateView/template/tree/refList.tmpl",
-      "app/views/templateView/template/tree/attributeText.tmpl",
-      "app/views/templateView/template/tree/attributeBinding.tmpl",
-      "app/views/templateView/template/tree/attributeClass.tmpl",
-      "app/views/templateView/template/tree/attribute.tmpl",
-      "app/views/templateView/template/tree/emptyElement.tmpl",
-      "app/views/templateView/template/tree/element.tmpl",
-      "app/views/templateView/template/tree/text.tmpl",
-      "app/views/templateView/template/tree/comment.tmpl"
-    ]
-  },
-  {
-    "name": "app/views/templateView/template/bindingsPanel.tmpl",
-    "type": "template",
-    "files": [
-      "app/views/templateView/template/bindings_actions.css"
-    ]
-  },
-  {
-    "name": "app/views/templateView/template/bindingsPanelItem.tmpl",
-    "type": "template",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/views/templateView/template/actionsPanel.tmpl",
-    "type": "template",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/views/templateView/template/actionsPanelItem.tmpl",
-    "type": "template",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/views/templateView/template/templatePanel.tmpl",
-    "type": "template",
-    "files": [
-      "app/views/templateView/template/templatePanel.css"
-    ]
-  },
-  {
-    "name": "app/views/templateView/template/tree/refList.tmpl",
-    "type": "template",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/views/templateView/template/tree/attributeText.tmpl",
-    "type": "template",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/views/templateView/template/tree/attributeBinding.tmpl",
-    "type": "template",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/views/templateView/template/tree/attributeClass.tmpl",
-    "type": "template",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/views/templateView/template/tree/attribute.tmpl",
-    "type": "template",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/views/templateView/template/tree/emptyElement.tmpl",
-    "type": "template",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/views/templateView/template/tree/element.tmpl",
-    "type": "template",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/views/templateView/template/tree/text.tmpl",
-    "type": "template",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/views/templateView/template/tree/comment.tmpl",
-    "type": "template",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/button/Button.css",
-    "type": "style",
-    "files": [
-      "../src/basis/ui/templates/button/res/button_transparent_bg.png"
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/button/ButtonGroup.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/tree/Tree.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/tree/PartitionNode.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/tree/Node.css",
-    "type": "style",
-    "files": [
-      "../src/basis/ui/templates/tree/res/page.gif"
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/tree/Node_Expander.css",
-    "type": "style",
-    "files": [
-      "../src/basis/ui/templates/tree/res/minus.gif",
-      "../src/basis/ui/templates/tree/res/plus.gif"
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/tree/Folder.css",
-    "type": "style",
-    "files": [
-      "../src/basis/ui/templates/tree/res/folder_open.gif",
-      "../src/basis/ui/templates/tree/res/folder_close.gif"
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/popup/Popup.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/popup/Balloon.css",
-    "type": "style",
-    "files": [
-      "../src/basis/ui/templates/popup/res/corners.png",
-      "../src/basis/ui/templates/popup/res/tails.png",
-      "../src/basis/ui/templates/popup/res/repeat-x.png",
-      "../src/basis/ui/templates/popup/res/repeat-y.png"
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/menu/MenuItem.css",
-    "type": "style",
-    "files": [
-      "../src/basis/ui/templates/menu/res/overlay.png",
-      "../src/basis/ui/templates/menu/res/menuitem_selected_icon.gif"
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/menu/PartitionNode.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/menu/Menu.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/table/HeaderCell.css",
-    "type": "style",
-    "files": [
-      "../src/basis/ui/templates/table/res/bg.gif",
-      "../src/basis/ui/templates/table/res/hline_left.gif",
-      "../src/basis/ui/templates/table/res/hline_right.gif",
-      "../src/basis/ui/templates/table/res/hover_bg.gif",
-      "../src/basis/ui/templates/table/res/hover_hline.gif",
-      "../src/basis/ui/templates/table/res/selected_bg.gif",
-      "../src/basis/ui/templates/table/res/order_asc.gif",
-      "../src/basis/ui/templates/table/res/order_desc.gif"
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/table/FooterCell.css",
-    "type": "style",
-    "files": [
-      "../src/basis/ui/templates/table/res/footer_bg.gif"
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/table/Row.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/table/Body.css",
-    "type": "style",
-    "files": [
-      "../src/basis/ui/templates/table/res/minus.gif",
-      "../src/basis/ui/templates/table/res/plus.gif"
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/table/Table.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/scrolltable/ScrollTable.css",
-    "type": "style",
-    "files": [
-      "../src/basis/ui/templates/table/res/bg.gif",
-      "../src/basis/ui/templates/table/res/footer_bg.gif"
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/window/Blocker.css",
-    "type": "style",
-    "files": [
-      "../src/basis/ui/templates/window/res/mate_white.png"
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/window/Window.css",
-    "type": "style",
-    "files": [
-      "../src/basis/ui/templates/window/res/corners.png",
-      "../src/basis/ui/templates/window/res/repeat-x.png",
-      "../src/basis/ui/templates/window/res/repeat-y.png"
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/window/TitleButton.css",
-    "type": "style",
-    "files": [
-      "../src/basis/ui/templates/window/res/button_close.png"
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/window/ButtonPanel.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/tabs/Tab.css",
-    "type": "style",
-    "files": [
-      "../src/basis/ui/templates/tabs/res/not_active_border.gif",
-      "../src/basis/ui/templates/tabs/res/not_active_bg.gif"
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/tabs/TabGroup.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/tabs/TabControl.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/tabs/Page.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/tabs/PageControl.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/tabs/AccordionControl.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/tabs/TabSheetControl.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/calendar/Node.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/calendar/Section.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/calendar/SectionMonth.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/calendar/Calendar.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/form/FormContent.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/scroller/Scrollbar.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/scroller/ScrollPanel.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/slider/Mark.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/slider/MarkLayer.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/slider/Slider.css",
-    "type": "style",
-    "files": [
-      "../src/basis/ui/templates/slider/res/slider.png"
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/slider/MarkLayers.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/paginator/PaginatorNode.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/paginator/Paginator.css",
-    "type": "style",
-    "files": [
-      "../src/basis/ui/templates/paginator/res/slider.png"
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/pageslider/PageSlider.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/field/Field.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/field/Combobox.css",
-    "type": "style",
-    "files": [
-      "../src/basis/ui/templates/field/res/dropdown_bg.gif",
-      "../src/basis/ui/templates/field/res/dropdown_arrow.gif",
-      "../src/basis/ui/templates/field/res/dropdown_gray_bg.gif"
-    ]
-  },
-  {
-    "name": "app/layout/template/prototypeMapPopupPanel.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/layout/template/searchInput.css",
-    "type": "style",
-    "files": [
-      "app/layout/template/img/input_search_16x16.png"
-    ]
-  },
-  {
-    "name": "app/views/prototype/template/prototypeView.css",
-    "type": "style",
-    "files": [
-      "app/views/prototype/template/img/node_property2.png",
-      "app/views/prototype/template/img/node_method.png",
-      "app/views/prototype/template/img/node_event.png"
-    ]
-  },
-  {
-    "name": "app/views/prototype/template/prototypeViewGroup.css",
-    "type": "style",
-    "files": [
-      "app/views/prototype/template/img/bullet_square_red.png"
-    ]
-  },
-  {
-    "name": "app/views/inheritance/template/inheritanceItem.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/views/inheritance/template/inheritanceView.css",
-    "type": "style",
-    "files": [
-      "app/views/inheritance/template/img/bullet_square_red.png"
-    ]
-  },
-  {
-    "name": "app/views/inheritance/template/inheritanceGroup.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/views/templateView/template/templateView.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/views/namespaceMap/template/namespaceNode.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/views/namespaceMap/template/namespaceMap.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/views/description/template/jsdocView.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/ext/docTree/template/docTreePartitionNode.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/ext/docTree/template/docTreeNode.css",
-    "type": "style",
-    "files": [
-      "app/ext/docTree/template/img/node_module.png",
-      "app/ext/docTree/template/img/node_partition.png",
-      "app/ext/docTree/template/img/bullet_square_red.png",
-      "app/ext/docTree/template/img/node_const.png",
-      "app/ext/docTree/template/img/node_class_function.png",
-      "app/ext/docTree/template/img/node_event.png",
-      "app/ext/docTree/template/img/node_method.png",
-      "app/ext/docTree/template/img/node_property2.png",
-      "app/ext/docTree/template/img/node_property.png",
-      "app/ext/docTree/template/img/element_copy.png"
-    ]
-  },
-  {
-    "name": "app/ext/docTree/template/docSearchTreeNode.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/ext/view/template/viewOption.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/ext/view/template/viewOptionList.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/ext/jsdoc/template/jsdocLinksPanel.css",
-    "type": "style",
-    "files": [
-      "app/ext/jsdoc/template/img/demo.png"
-    ]
-  },
-  {
-    "name": "app/ext/jsdoc/template/jsdocPanel.css",
-    "type": "style",
-    "files": [
-      "app/ext/jsdoc/template/img/node_module.png",
-      "app/ext/jsdoc/template/img/jsdocs_param.png",
-      "app/ext/jsdoc/template/img/jsdocs_param_optional.png"
-    ]
-  },
-  {
-    "name": "app/views/templateView/template/bindings_actions.css",
-    "type": "style",
-    "files": [
-      "app/views/templateView/template/img/plus.gif",
-      "app/views/templateView/template/img/minus.gif"
-    ]
-  },
-  {
-    "name": "app/views/templateView/template/templatePanel.css",
-    "type": "style",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/css/main.css",
-    "type": "style",
-    "files": [
-      "app/css/img/node_class_big.png",
-      "app/css/img/node_property_big.png",
-      "app/css/img/node_function_big.png",
-      "app/css/img/node_module_big.png",
-      "app/css/img/node_const_big.png",
-      "app/css/img/node_event.png",
-      "app/css/img/tab_bg_bottom.png",
-      "app/css/img/tab_bg_top.png"
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/button/res/button_transparent_bg.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/tree/res/page.gif",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/tree/res/minus.gif",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/tree/res/plus.gif",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/tree/res/folder_open.gif",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/tree/res/folder_close.gif",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/popup/res/corners.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/popup/res/tails.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/popup/res/repeat-x.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/popup/res/repeat-y.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/menu/res/overlay.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/menu/res/menuitem_selected_icon.gif",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/table/res/bg.gif",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/table/res/hline_left.gif",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/table/res/hline_right.gif",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/table/res/hover_bg.gif",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/table/res/hover_hline.gif",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/table/res/selected_bg.gif",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/table/res/order_asc.gif",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/table/res/order_desc.gif",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/table/res/footer_bg.gif",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/table/res/minus.gif",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/table/res/plus.gif",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/window/res/mate_white.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/window/res/corners.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/window/res/repeat-x.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/window/res/repeat-y.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/window/res/button_close.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/tabs/res/not_active_border.gif",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/tabs/res/not_active_bg.gif",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/slider/res/slider.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/paginator/res/slider.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/field/res/dropdown_bg.gif",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/field/res/dropdown_arrow.gif",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "../src/basis/ui/templates/field/res/dropdown_gray_bg.gif",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/layout/template/img/input_search_16x16.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/views/prototype/template/img/node_property2.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/views/prototype/template/img/node_method.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/views/prototype/template/img/node_event.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/views/prototype/template/img/bullet_square_red.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/views/inheritance/template/img/bullet_square_red.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/ext/docTree/template/img/node_module.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/ext/docTree/template/img/node_partition.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/ext/docTree/template/img/bullet_square_red.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/ext/docTree/template/img/node_const.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/ext/docTree/template/img/node_class_function.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/ext/docTree/template/img/node_event.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/ext/docTree/template/img/node_method.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/ext/docTree/template/img/node_property2.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/ext/docTree/template/img/node_property.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/ext/docTree/template/img/element_copy.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/ext/jsdoc/template/img/demo.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/ext/jsdoc/template/img/node_module.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/ext/jsdoc/template/img/jsdocs_param.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/ext/jsdoc/template/img/jsdocs_param_optional.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/views/templateView/template/img/plus.gif",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/views/templateView/template/img/minus.gif",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/css/img/node_class_big.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/css/img/node_property_big.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/css/img/node_function_big.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/css/img/node_module_big.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/css/img/node_const_big.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/css/img/node_event.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/css/img/tab_bg_bottom.png",
-    "type": "image",
-    "files": [
-    ]
-  },
-  {
-    "name": "app/css/img/tab_bg_top.png",
-    "type": "image",
-    "files": [
-    ]
+    "name": "src/basis/ui/templates/paginator/res/slider.png",
+    "type": "image"
   }
-]
+  ],
+  "links": [
+["docs/index.html", "docs/app/css/main.css"],
+    ["docs/index.html", "src/basis.js"],
+    ["src/basis.js", "docs/app.js"],
+    ["docs/app.js", "src/basis/timer.js"],
+    ["docs/app.js", "src/basis/event.js"],
+    ["docs/app.js", "src/basis/ua.js"],
+    ["docs/app.js", "src/basis/ua/visibility.js"],
+    ["src/basis/ua/visibility.js", "src/basis/event.js"],
+    ["docs/app.js", "src/basis/dom.js"],
+    ["src/basis/dom.js", "src/basis/ua.js"],
+    ["docs/app.js", "src/basis/dom/event.js"],
+    ["docs/app.js", "src/basis/dom/wrapper.js"],
+    ["src/basis/dom/wrapper.js", "src/basis/event.js"],
+    ["src/basis/dom/wrapper.js", "src/basis/data.js"],
+    ["src/basis/data.js", "src/basis/event.js"],
+    ["docs/app.js", "src/basis/cssom.js"],
+    ["src/basis/cssom.js", "src/basis/dom.js"],
+    ["docs/app.js", "src/basis/router.js"],
+    ["src/basis/router.js", "src/basis/ua.js"],
+    ["src/basis/router.js", "src/basis/dom/event.js"],
+    ["docs/app.js", "src/basis/app.js"],
+    ["docs/app.js", "src/basis/template.js"],
+    ["docs/app.js", "src/basis/template/html.js"],
+    ["src/basis/template/html.js", "src/basis/dom.js"],
+    ["src/basis/template/html.js", "src/basis/dom/event.js"],
+    ["src/basis/template/html.js", "src/basis/l10n.js"],
+    ["src/basis/template/html.js", "src/basis/template.js"],
+    ["src/basis/template/html.js", "src/basis/template/htmlfgen.js"],
+    ["src/basis/template/htmlfgen.js", "src/basis/template.js"],
+    ["docs/app.js", "src/basis/template/htmlfgen.js"],
+    ["docs/app.js", "src/basis/html.js"],
+    ["src/basis/html.js", "src/basis/dom.js"],
+    ["src/basis/html.js", "src/basis/template.js"],
+    ["docs/app.js", "src/basis/date.js"],
+    ["docs/app.js", "src/basis/dragdrop.js"],
+    ["src/basis/dragdrop.js", "src/basis/event.js"],
+    ["src/basis/dragdrop.js", "src/basis/ua.js"],
+    ["src/basis/dragdrop.js", "src/basis/dom.js"],
+    ["src/basis/dragdrop.js", "src/basis/dom/event.js"],
+    ["src/basis/dragdrop.js", "src/basis/cssom.js"],
+    ["src/basis/dragdrop.js", "src/basis/layout.js"],
+    ["src/basis/layout.js", "src/basis/ua.js"],
+    ["src/basis/layout.js", "src/basis/dom.js"],
+    ["src/basis/layout.js", "src/basis/cssom.js"],
+    ["src/basis/layout.js", "src/basis/template.js"],
+    ["src/basis/layout.js", "src/basis/ui.js"],
+    ["src/basis/ui.js", "src/basis/timer.js"],
+    ["src/basis/ui.js", "src/basis/l10n.js"],
+    ["src/basis/ui.js", "src/basis/data.js"],
+    ["src/basis/ui.js", "src/basis/dom/wrapper.js"],
+    ["src/basis/ui.js", "src/basis/cssom.js"],
+    ["src/basis/ui.js", "src/basis/template/html.js"],
+    ["src/basis/layout.js", "src/basis/ui/templates/layout/VerticalPanel.tmpl"],
+    ["src/basis/layout.js", "src/basis/ui/templates/layout/VerticalPanelStack.tmpl"],
+    ["docs/app.js", "src/basis/animation.js"],
+    ["src/basis/animation.js", "src/basis/event.js"],
+    ["src/basis/animation.js", "src/basis/cssom.js"],
+    ["src/basis/animation.js", "src/basis/data/property.js"],
+    ["src/basis/data/property.js", "src/basis/timer.js"],
+    ["src/basis/data/property.js", "src/basis/event.js"],
+    ["src/basis/data/property.js", "src/basis/dom.js"],
+    ["src/basis/data/property.js", "src/basis/cssom.js"],
+    ["src/basis/data/property.js", "src/basis/data.js"],
+    ["docs/app.js", "src/basis/xml.js"],
+    ["src/basis/xml.js", "src/basis/ua.js"],
+    ["src/basis/xml.js", "src/basis/dom.js"],
+    ["docs/app.js", "src/basis/layout.js"],
+    ["docs/app.js", "src/basis/crypt.js"],
+    ["docs/app.js", "src/basis/data.js"],
+    ["docs/app.js", "src/basis/data/dataset.js"],
+    ["src/basis/data/dataset.js", "src/basis/event.js"],
+    ["src/basis/data/dataset.js", "src/basis/data.js"],
+    ["docs/app.js", "src/basis/data/generator.js"],
+    ["docs/app.js", "src/basis/data/property.js"],
+    ["docs/app.js", "src/basis/data/index.js"],
+    ["src/basis/data/index.js", "src/basis/timer.js"],
+    ["src/basis/data/index.js", "src/basis/data.js"],
+    ["src/basis/data/index.js", "src/basis/data/dataset.js"],
+    ["src/basis/data/index.js", "src/basis/data/property.js"],
+    ["docs/app.js", "src/basis/data/vector.js"],
+    ["src/basis/data/vector.js", "src/basis/data.js"],
+    ["src/basis/data/vector.js", "src/basis/data/dataset.js"],
+    ["docs/app.js", "src/basis/entity.js"],
+    ["src/basis/entity.js", "src/basis/event.js"],
+    ["src/basis/entity.js", "src/basis/data.js"],
+    ["src/basis/entity.js", "src/basis/data/dataset.js"],
+    ["docs/app.js", "src/basis/session.js"],
+    ["src/basis/session.js", "src/basis/event.js"],
+    ["docs/app.js", "src/basis/net.js"],
+    ["src/basis/net.js", "src/basis/event.js"],
+    ["src/basis/net.js", "src/basis/data.js"],
+    ["src/basis/net.js", "src/basis/timer.js"],
+    ["docs/app.js", "src/basis/net/rpc.js"],
+    ["src/basis/net/rpc.js", "src/basis/data.js"],
+    ["docs/app.js", "src/basis/net/service.js"],
+    ["src/basis/net/service.js", "src/basis/event.js"],
+    ["src/basis/net/service.js", "src/basis/net.js"],
+    ["src/basis/net/service.js", "src/basis/net/rpc.js"],
+    ["docs/app.js", "src/basis/net/soap.js"],
+    ["src/basis/net/soap.js", "src/basis/dom.js"],
+    ["src/basis/net/soap.js", "src/basis/xml.js"],
+    ["src/basis/net/soap.js", "src/basis/net.js"],
+    ["docs/app.js", "src/basis/net/upload.js"],
+    ["src/basis/net/upload.js", "src/basis/net.js"],
+    ["docs/app.js", "src/basis/l10n.js"],
+    ["docs/app.js", "src/basis/ui.js"],
+    ["docs/app.js", "src/basis/ui/button.js"],
+    ["src/basis/ui/button.js", "src/basis/ui.js"],
+    ["src/basis/ui/button.js", "src/basis/ui/templates/button/Button.tmpl"],
+    ["src/basis/ui/button.js", "src/basis/ui/templates/button/ButtonPanel.tmpl"],
+    ["src/basis/ui/button.js", "src/basis/ui/templates/button/ButtonGroup.tmpl"],
+    ["docs/app.js", "src/basis/ui/label.js"],
+    ["src/basis/ui/label.js", "src/basis/event.js"],
+    ["src/basis/ui/label.js", "src/basis/dom.js"],
+    ["src/basis/ui/label.js", "src/basis/data.js"],
+    ["src/basis/ui/label.js", "src/basis/dom/wrapper.js"],
+    ["src/basis/ui/label.js", "src/basis/ui.js"],
+    ["src/basis/ui/label.js", "src/basis/ui/templates/label/label.tmpl"],
+    ["src/basis/ui/label.js", "src/basis/ui/templates/label/state.tmpl"],
+    ["src/basis/ui/label.js", "src/basis/ui/templates/label/processing.tmpl"],
+    ["src/basis/ui/label.js", "src/basis/ui/templates/label/error.tmpl"],
+    ["src/basis/ui/label.js", "src/basis/ui/templates/label/count.tmpl"],
+    ["src/basis/ui/label.js", "src/basis/ui/templates/label/empty.tmpl"],
+    ["docs/app.js", "src/basis/ui/tree.js"],
+    ["src/basis/ui/tree.js", "src/basis/event.js"],
+    ["src/basis/ui/tree.js", "src/basis/dom.js"],
+    ["src/basis/ui/tree.js", "src/basis/ui.js"],
+    ["src/basis/ui/tree.js", "src/basis/template.js"],
+    ["src/basis/ui/tree.js", "src/basis/ui/templates/tree/Tree.tmpl"],
+    ["src/basis/ui/tree.js", "src/basis/ui/templates/tree/PartitionNode.tmpl"],
+    ["src/basis/ui/tree.js", "src/basis/ui/templates/tree/Node.tmpl"],
+    ["src/basis/ui/tree.js", "src/basis/ui/templates/tree/Folder.tmpl"],
+    ["docs/app.js", "src/basis/ui/popup.js"],
+    ["src/basis/ui/popup.js", "src/basis/event.js"],
+    ["src/basis/ui/popup.js", "src/basis/dom.js"],
+    ["src/basis/ui/popup.js", "src/basis/dom/event.js"],
+    ["src/basis/ui/popup.js", "src/basis/cssom.js"],
+    ["src/basis/ui/popup.js", "src/basis/layout.js"],
+    ["src/basis/ui/popup.js", "src/basis/l10n.js"],
+    ["src/basis/ui/popup.js", "src/basis/ui.js"],
+    ["src/basis/ui/popup.js", "src/basis/ui/templates/popup/Popup.tmpl"],
+    ["src/basis/ui/popup.js", "src/basis/ui/templates/popup/Balloon.tmpl"],
+    ["src/basis/ui/popup.js", "src/basis/ui/templates/popup/popupManager.tmpl"],
+    ["docs/app.js", "src/basis/ui/menu.js"],
+    ["src/basis/ui/menu.js", "src/basis/ui.js"],
+    ["src/basis/ui/menu.js", "src/basis/ui/popup.js"],
+    ["src/basis/ui/menu.js", "src/basis/ui/templates/menu/MenuItem.tmpl"],
+    ["src/basis/ui/menu.js", "src/basis/ui/templates/menu/MenuItemSet.tmpl"],
+    ["src/basis/ui/menu.js", "src/basis/ui/templates/menu/PartitionNode.tmpl"],
+    ["src/basis/ui/menu.js", "src/basis/ui/templates/menu/Menu.tmpl"],
+    ["docs/app.js", "src/basis/ui/table.js"],
+    ["src/basis/ui/table.js", "src/basis/data.js"],
+    ["src/basis/ui/table.js", "src/basis/dom.js"],
+    ["src/basis/ui/table.js", "src/basis/dom/wrapper.js"],
+    ["src/basis/ui/table.js", "src/basis/l10n.js"],
+    ["src/basis/ui/table.js", "src/basis/ui.js"],
+    ["src/basis/ui/table.js", "src/basis/ui/templates/table/Table.tmpl"],
+    ["src/basis/ui/table.js", "src/basis/ui/templates/table/Body.tmpl"],
+    ["src/basis/ui/table.js", "src/basis/ui/templates/table/Row.tmpl"],
+    ["src/basis/ui/table.js", "src/basis/ui/templates/table/Header.tmpl"],
+    ["src/basis/ui/table.js", "src/basis/ui/templates/table/HeaderPartitionNode.tmpl"],
+    ["src/basis/ui/table.js", "src/basis/ui/templates/table/HeaderCell.tmpl"],
+    ["src/basis/ui/table.js", "src/basis/ui/templates/table/FooterCell.tmpl"],
+    ["src/basis/ui/table.js", "src/basis/ui/templates/table/Footer.tmpl"],
+    ["docs/app.js", "src/basis/ui/scrolltable.js"],
+    ["src/basis/ui/scrolltable.js", "src/basis/timer.js"],
+    ["src/basis/ui/scrolltable.js", "src/basis/dom.js"],
+    ["src/basis/ui/scrolltable.js", "src/basis/dom/event.js"],
+    ["src/basis/ui/scrolltable.js", "src/basis/cssom.js"],
+    ["src/basis/ui/scrolltable.js", "src/basis/layout.js"],
+    ["src/basis/ui/scrolltable.js", "src/basis/ui/table.js"],
+    ["src/basis/ui/scrolltable.js", "src/basis/ui/templates/scrolltable/ScrollTable.tmpl"],
+    ["docs/app.js", "src/basis/ui/window.js"],
+    ["src/basis/ui/window.js", "src/basis/event.js"],
+    ["src/basis/ui/window.js", "src/basis/dom.js"],
+    ["src/basis/ui/window.js", "src/basis/dom/event.js"],
+    ["src/basis/ui/window.js", "src/basis/cssom.js"],
+    ["src/basis/ui/window.js", "src/basis/l10n.js"],
+    ["src/basis/ui/window.js", "src/basis/ui.js"],
+    ["src/basis/ui/window.js", "src/basis/ui/button.js"],
+    ["src/basis/ui/window.js", "src/basis/dragdrop.js"],
+    ["src/basis/ui/window.js", "src/basis/ui/templates/window/Blocker.tmpl"],
+    ["src/basis/ui/window.js", "src/basis/ui/templates/window/Window.tmpl"],
+    ["src/basis/ui/window.js", "src/basis/ui/templates/window/TitleButton.tmpl"],
+    ["src/basis/ui/window.js", "src/basis/ui/templates/window/ButtonPanel.tmpl"],
+    ["src/basis/ui/window.js", "src/basis/ui/templates/window/windowManager.tmpl"],
+    ["docs/app.js", "src/basis/ui/tabs.js"],
+    ["src/basis/ui/tabs.js", "src/basis/event.js"],
+    ["src/basis/ui/tabs.js", "src/basis/dom.js"],
+    ["src/basis/ui/tabs.js", "src/basis/dom/wrapper.js"],
+    ["src/basis/ui/tabs.js", "src/basis/ui.js"],
+    ["src/basis/ui/tabs.js", "src/basis/ui/templates/tabs/TabControl.tmpl"],
+    ["src/basis/ui/tabs.js", "src/basis/ui/templates/tabs/TabGroup.tmpl"],
+    ["src/basis/ui/tabs.js", "src/basis/ui/templates/tabs/Tab.tmpl"],
+    ["src/basis/ui/tabs.js", "src/basis/ui/templates/tabs/PageControl.tmpl"],
+    ["src/basis/ui/tabs.js", "src/basis/ui/templates/tabs/Page.tmpl"],
+    ["src/basis/ui/tabs.js", "src/basis/ui/templates/tabs/TabSheetControl.tmpl"],
+    ["src/basis/ui/tabs.js", "src/basis/ui/templates/tabs/TabSheet.tmpl"],
+    ["src/basis/ui/tabs.js", "src/basis/ui/templates/tabs/AccordionControl.tmpl"],
+    ["docs/app.js", "src/basis/ui/calendar.js"],
+    ["src/basis/ui/calendar.js", "src/basis/event.js"],
+    ["src/basis/ui/calendar.js", "src/basis/date.js"],
+    ["src/basis/ui/calendar.js", "src/basis/dom.js"],
+    ["src/basis/ui/calendar.js", "src/basis/dom/event.js"],
+    ["src/basis/ui/calendar.js", "src/basis/data/property.js"],
+    ["src/basis/ui/calendar.js", "src/basis/ui.js"],
+    ["src/basis/ui/calendar.js", "src/basis/l10n.js"],
+    ["src/basis/ui/calendar.js", "src/basis/ui/templates/calendar/Calendar.tmpl"],
+    ["src/basis/ui/calendar.js", "src/basis/ui/templates/calendar/Section.tmpl"],
+    ["src/basis/ui/calendar.js", "src/basis/ui/templates/calendar/SectionMonth.tmpl"],
+    ["src/basis/ui/calendar.js", "src/basis/ui/templates/calendar/Node.tmpl"],
+    ["docs/app.js", "src/basis/ui/form.js"],
+    ["src/basis/ui/form.js", "src/basis/event.js"],
+    ["src/basis/ui/form.js", "src/basis/dom.js"],
+    ["src/basis/ui/form.js", "src/basis/dom/event.js"],
+    ["src/basis/ui/form.js", "src/basis/ui.js"],
+    ["src/basis/ui/form.js", "src/basis/ui/field.js"],
+    ["src/basis/ui/field.js", "src/basis/l10n.js"],
+    ["src/basis/ui/field.js", "src/basis/event.js"],
+    ["src/basis/ui/field.js", "src/basis/dom.js"],
+    ["src/basis/ui/field.js", "src/basis/dom/event.js"],
+    ["src/basis/ui/field.js", "src/basis/dom/wrapper.js"],
+    ["src/basis/ui/field.js", "src/basis/data/property.js"],
+    ["src/basis/ui/field.js", "src/basis/ui.js"],
+    ["src/basis/ui/field.js", "src/basis/ui/popup.js"],
+    ["src/basis/ui/field.js", "src/basis/ui/templates/field/Example.tmpl"],
+    ["src/basis/ui/field.js", "src/basis/ui/templates/field/Description.tmpl"],
+    ["src/basis/ui/field.js", "src/basis/ui/templates/field/Counter.tmpl"],
+    ["src/basis/ui/field.js", "src/basis/ui/templates/field/Field.tmpl"],
+    ["src/basis/ui/field.js", "src/basis/ui/templates/field/File.tmpl"],
+    ["src/basis/ui/field.js", "src/basis/ui/templates/field/Hidden.tmpl"],
+    ["src/basis/ui/field.js", "src/basis/ui/templates/field/Text.tmpl"],
+    ["src/basis/ui/field.js", "src/basis/ui/templates/field/Password.tmpl"],
+    ["src/basis/ui/field.js", "src/basis/ui/templates/field/Textarea.tmpl"],
+    ["src/basis/ui/field.js", "src/basis/ui/templates/field/Checkbox.tmpl"],
+    ["src/basis/ui/field.js", "src/basis/ui/templates/field/Label.tmpl"],
+    ["src/basis/ui/field.js", "src/basis/ui/templates/field/RadioGroup.tmpl"],
+    ["src/basis/ui/field.js", "src/basis/ui/templates/field/RadioGroupItem.tmpl"],
+    ["src/basis/ui/field.js", "src/basis/ui/templates/field/CheckGroup.tmpl"],
+    ["src/basis/ui/field.js", "src/basis/ui/templates/field/CheckGroupItem.tmpl"],
+    ["src/basis/ui/field.js", "src/basis/ui/templates/field/Select.tmpl"],
+    ["src/basis/ui/field.js", "src/basis/ui/templates/field/SelectItem.tmpl"],
+    ["src/basis/ui/field.js", "src/basis/ui/templates/field/Combobox.tmpl"],
+    ["src/basis/ui/field.js", "src/basis/ui/templates/field/ComboboxItem.tmpl"],
+    ["src/basis/ui/field.js", "src/basis/ui/templates/field/ComboboxDropdownList.tmpl"],
+    ["src/basis/ui/field.js", "src/basis/ui/templates/field/MatchInput.tmpl"],
+    ["src/basis/ui/form.js", "src/basis/ui/templates/form/Form.tmpl"],
+    ["src/basis/ui/form.js", "src/basis/ui/templates/form/FormContent.tmpl"],
+    ["docs/app.js", "src/basis/ui/field.js"],
+    ["docs/app.js", "src/basis/ui/scroller.js"],
+    ["src/basis/ui/scroller.js", "src/basis/event.js"],
+    ["src/basis/ui/scroller.js", "src/basis/dom.js"],
+    ["src/basis/ui/scroller.js", "src/basis/dom/event.js"],
+    ["src/basis/ui/scroller.js", "src/basis/cssom.js"],
+    ["src/basis/ui/scroller.js", "src/basis/ui.js"],
+    ["src/basis/ui/scroller.js", "src/basis/animation.js"],
+    ["src/basis/ui/scroller.js", "src/basis/ui/templates/scroller/Scrollbar.tmpl"],
+    ["src/basis/ui/scroller.js", "src/basis/ui/templates/scroller/ScrollPanel.tmpl"],
+    ["src/basis/ui/scroller.js", "src/basis/ui/templates/scroller/ScrollGalleryItem.tmpl"],
+    ["docs/app.js", "src/basis/ui/slider.js"],
+    ["src/basis/ui/slider.js", "src/basis/event.js"],
+    ["src/basis/ui/slider.js", "src/basis/dom.js"],
+    ["src/basis/ui/slider.js", "src/basis/dom/event.js"],
+    ["src/basis/ui/slider.js", "src/basis/layout.js"],
+    ["src/basis/ui/slider.js", "src/basis/dragdrop.js"],
+    ["src/basis/ui/slider.js", "src/basis/ui/templates/slider/Slider.tmpl"],
+    ["src/basis/ui/slider.js", "src/basis/ui/templates/slider/MarkLayers.tmpl"],
+    ["src/basis/ui/slider.js", "src/basis/ui/templates/slider/MarkLayer.tmpl"],
+    ["src/basis/ui/slider.js", "src/basis/ui/templates/slider/Mark.tmpl"],
+    ["docs/app.js", "src/basis/ui/resizer.js"],
+    ["src/basis/ui/resizer.js", "src/basis/dom.js"],
+    ["src/basis/ui/resizer.js", "src/basis/cssom.js"],
+    ["src/basis/ui/resizer.js", "src/basis/dragdrop.js"],
+    ["src/basis/ui/resizer.js", "src/basis/ui.js"],
+    ["src/basis/ui/resizer.js", "src/basis/ui/templates/resizer/style.css"],
+    ["docs/app.js", "src/basis/ui/paginator.js"],
+    ["src/basis/ui/paginator.js", "src/basis/event.js"],
+    ["src/basis/ui/paginator.js", "src/basis/dom/event.js"],
+    ["src/basis/ui/paginator.js", "src/basis/dom/wrapper.js"],
+    ["src/basis/ui/paginator.js", "src/basis/dragdrop.js"],
+    ["src/basis/ui/paginator.js", "src/basis/ui.js"],
+    ["src/basis/ui/paginator.js", "src/basis/ui/templates/paginator/Paginator.tmpl"],
+    ["src/basis/ui/paginator.js", "src/basis/ui/templates/paginator/PaginatorNode.tmpl"],
+    ["docs/app.js", "src/basis/ui/pageslider.js"],
+    ["src/basis/ui/pageslider.js", "src/basis/dom.js"],
+    ["src/basis/ui/pageslider.js", "src/basis/cssom.js"],
+    ["src/basis/ui/pageslider.js", "src/basis/ui.js"],
+    ["src/basis/ui/pageslider.js", "src/basis/ui/tabs.js"],
+    ["src/basis/ui/pageslider.js", "src/basis/ui/scroller.js"],
+    ["src/basis/ui/pageslider.js", "src/basis/ui/templates/pageslider/PageSlider.tmpl"],
+    ["docs/app.js", "src/basis/ui/canvas.js"],
+    ["src/basis/ui/canvas.js", "src/basis/event.js"],
+    ["src/basis/ui/canvas.js", "src/basis/dom.js"],
+    ["src/basis/ui/canvas.js", "src/basis/dom/wrapper.js"],
+    ["src/basis/ui/canvas.js", "src/basis/ui.js"],
+    ["src/basis/ui/canvas.js", "src/basis/ui/templates/canvas/Canvas.tmpl"],
+    ["docs/app.js", "src/basis/ui/graph.js"],
+    ["src/basis/ui/graph.js", "src/basis/dom.js"],
+    ["src/basis/ui/graph.js", "src/basis/dom/event.js"],
+    ["src/basis/ui/graph.js", "src/basis/data.js"],
+    ["src/basis/ui/graph.js", "src/basis/dom/wrapper.js"],
+    ["src/basis/ui/graph.js", "src/basis/ui.js"],
+    ["src/basis/ui/graph.js", "src/basis/ui/canvas.js"],
+    ["src/basis/ui/graph.js", "src/basis/ui/templates/graph/Graph.tmpl"],
+    ["src/basis/ui/graph.js", "src/basis/ui/templates/graph/GraphSelection.tmpl"],
+    ["src/basis/ui/graph.js", "src/basis/ui/templates/graph/GraphViewer.tmpl"],
+    ["docs/app.js", "src/basis/format/highlight.js"],
+    ["src/basis/format/highlight.js", "src/basis/ui.js"],
+    ["src/basis/format/highlight.js", "src/basis/format/templates/SourceCodeNode.css"],
+    ["src/basis/format/highlight.js", "src/basis/format/templates/SourceCodeNode.tmpl"],
+    ["docs/app.js", "app/layout.js"],
+    ["src/basis/ui/templates/layout/VerticalPanel.tmpl", "src/basis/ui/templates/layout/VerticalPanel.css"],
+    ["src/basis/ui/templates/layout/VerticalPanelStack.tmpl", "src/basis/ui/templates/layout/VerticalPanelStack.css"],
+    ["src/basis/ui/templates/button/Button.tmpl", "src/basis/ui/templates/button/Button.css"],
+    ["src/basis/ui/templates/button/ButtonGroup.tmpl", "src/basis/ui/templates/button/ButtonGroup.css"],
+    ["src/basis/ui/templates/tree/Tree.tmpl", "src/basis/ui/templates/tree/Tree.css"],
+    ["src/basis/ui/templates/tree/PartitionNode.tmpl", "src/basis/ui/templates/tree/PartitionNode.css"],
+    ["src/basis/ui/templates/tree/Node.tmpl", "src/basis/ui/templates/tree/Node.css"],
+    ["src/basis/ui/templates/tree/Folder.tmpl", "src/basis/ui/templates/tree/Node.css"],
+    ["src/basis/ui/templates/tree/Folder.tmpl", "src/basis/ui/templates/tree/Node_Expander.css"],
+    ["src/basis/ui/templates/tree/Folder.tmpl", "src/basis/ui/templates/tree/Folder.css"],
+    ["src/basis/ui/templates/popup/Popup.tmpl", "src/basis/ui/templates/popup/Popup.css"],
+    ["src/basis/ui/templates/popup/Balloon.tmpl", "src/basis/ui/templates/popup/Balloon.css"],
+    ["src/basis/ui/templates/menu/MenuItem.tmpl", "src/basis/ui/templates/menu/MenuItem.css"],
+    ["src/basis/ui/templates/menu/PartitionNode.tmpl", "src/basis/ui/templates/menu/PartitionNode.css"],
+    ["src/basis/ui/templates/menu/Menu.tmpl", "src/basis/ui/templates/menu/Menu.css"],
+    ["src/basis/ui/templates/table/Table.tmpl", "src/basis/ui/templates/table/Table.css"],
+    ["src/basis/ui/templates/table/Body.tmpl", "src/basis/ui/templates/table/Body.css"],
+    ["src/basis/ui/templates/table/Row.tmpl", "src/basis/ui/templates/table/Row.css"],
+    ["src/basis/ui/templates/table/HeaderCell.tmpl", "src/basis/ui/templates/table/HeaderCell.css"],
+    ["src/basis/ui/templates/table/FooterCell.tmpl", "src/basis/ui/templates/table/FooterCell.css"],
+    ["src/basis/ui/templates/scrolltable/ScrollTable.tmpl", "src/basis/ui/templates/table/Table.css"],
+    ["src/basis/ui/templates/scrolltable/ScrollTable.tmpl", "src/basis/ui/templates/scrolltable/ScrollTable.css"],
+    ["src/basis/ui/templates/window/Blocker.tmpl", "src/basis/ui/templates/window/Blocker.css"],
+    ["src/basis/ui/templates/window/Window.tmpl", "src/basis/ui/templates/window/Window.css"],
+    ["src/basis/ui/templates/window/TitleButton.tmpl", "src/basis/ui/templates/window/TitleButton.css"],
+    ["src/basis/ui/templates/window/ButtonPanel.tmpl", "src/basis/ui/templates/window/ButtonPanel.css"],
+    ["src/basis/ui/templates/tabs/TabControl.tmpl", "src/basis/ui/templates/tabs/TabControl.css"],
+    ["src/basis/ui/templates/tabs/TabGroup.tmpl", "src/basis/ui/templates/tabs/TabGroup.css"],
+    ["src/basis/ui/templates/tabs/Tab.tmpl", "src/basis/ui/templates/tabs/Tab.css"],
+    ["src/basis/ui/templates/tabs/PageControl.tmpl", "src/basis/ui/templates/tabs/PageControl.css"],
+    ["src/basis/ui/templates/tabs/Page.tmpl", "src/basis/ui/templates/tabs/Page.css"],
+    ["src/basis/ui/templates/tabs/TabSheetControl.tmpl", "src/basis/ui/templates/tabs/TabSheetControl.css"],
+    ["src/basis/ui/templates/tabs/TabSheetControl.tmpl", "src/basis/ui/templates/tabs/TabControl.css"],
+    ["src/basis/ui/templates/tabs/TabSheetControl.tmpl", "src/basis/ui/templates/tabs/PageControl.css"],
+    ["src/basis/ui/templates/tabs/TabSheet.tmpl", "src/basis/ui/templates/tabs/Tab.css"],
+    ["src/basis/ui/templates/tabs/TabSheet.tmpl", "src/basis/ui/templates/tabs/Page.css"],
+    ["src/basis/ui/templates/tabs/AccordionControl.tmpl", "src/basis/ui/templates/tabs/AccordionControl.css"],
+    ["src/basis/ui/templates/calendar/Calendar.tmpl", "src/basis/ui/templates/calendar/Calendar.css"],
+    ["src/basis/ui/templates/calendar/Section.tmpl", "src/basis/ui/templates/calendar/Section.css"],
+    ["src/basis/ui/templates/calendar/SectionMonth.tmpl", "src/basis/ui/templates/calendar/Section.css"],
+    ["src/basis/ui/templates/calendar/SectionMonth.tmpl", "src/basis/ui/templates/calendar/SectionMonth.css"],
+    ["src/basis/ui/templates/calendar/Node.tmpl", "src/basis/ui/templates/calendar/Node.css"],
+    ["src/basis/ui/templates/field/Field.tmpl", "src/basis/ui/templates/field/Field.css"],
+    ["src/basis/ui/templates/field/File.tmpl", "src/basis/ui/templates/field/Field.css"],
+    ["src/basis/ui/templates/field/Text.tmpl", "src/basis/ui/templates/field/Field.css"],
+    ["src/basis/ui/templates/field/Password.tmpl", "src/basis/ui/templates/field/Field.css"],
+    ["src/basis/ui/templates/field/Textarea.tmpl", "src/basis/ui/templates/field/Field.css"],
+    ["src/basis/ui/templates/field/Label.tmpl", "src/basis/ui/templates/field/Field.css"],
+    ["src/basis/ui/templates/field/RadioGroup.tmpl", "src/basis/ui/templates/field/Field.css"],
+    ["src/basis/ui/templates/field/CheckGroup.tmpl", "src/basis/ui/templates/field/Field.css"],
+    ["src/basis/ui/templates/field/Select.tmpl", "src/basis/ui/templates/field/Field.css"],
+    ["src/basis/ui/templates/field/Combobox.tmpl", "src/basis/ui/templates/field/Combobox.css"],
+    ["src/basis/ui/templates/field/Combobox.tmpl", "src/basis/ui/templates/field/Field.css"],
+    ["src/basis/ui/templates/field/ComboboxDropdownList.tmpl", "src/basis/ui/templates/popup/Popup.css"],
+    ["src/basis/ui/templates/field/MatchInput.tmpl", "src/basis/ui/templates/field/Field.css"],
+    ["src/basis/ui/templates/form/Form.tmpl", "src/basis/ui/templates/form/FormContent.css"],
+    ["src/basis/ui/templates/form/FormContent.tmpl", "src/basis/ui/templates/form/FormContent.css"],
+    ["src/basis/ui/templates/scroller/Scrollbar.tmpl", "src/basis/ui/templates/scroller/Scrollbar.css"],
+    ["src/basis/ui/templates/scroller/ScrollPanel.tmpl", "src/basis/ui/templates/scroller/ScrollPanel.css"],
+    ["src/basis/ui/templates/slider/Slider.tmpl", "src/basis/ui/templates/slider/Slider.css"],
+    ["src/basis/ui/templates/slider/MarkLayers.tmpl", "src/basis/ui/templates/slider/MarkLayers.css"],
+    ["src/basis/ui/templates/slider/MarkLayer.tmpl", "src/basis/ui/templates/slider/MarkLayer.css"],
+    ["src/basis/ui/templates/slider/Mark.tmpl", "src/basis/ui/templates/slider/Mark.css"],
+    ["src/basis/ui/templates/paginator/Paginator.tmpl", "src/basis/ui/templates/paginator/Paginator.css"],
+    ["src/basis/ui/templates/paginator/PaginatorNode.tmpl", "src/basis/ui/templates/paginator/PaginatorNode.css"],
+    ["src/basis/ui/templates/pageslider/PageSlider.tmpl", "src/basis/ui/templates/pageslider/PageSlider.css"],
+    ["src/basis/ui/templates/graph/Graph.tmpl", "src/basis/ui/templates/graph/Graph.css"],
+    ["src/basis/ui/templates/graph/GraphSelection.tmpl", "src/basis/ui/templates/graph/GraphSelection.css"],
+    ["src/basis/ui/templates/graph/GraphViewer.tmpl", "src/basis/ui/templates/graph/GraphViewer.css"],
+    ["src/basis/format/templates/SourceCodeNode.tmpl", "src/basis/format/templates/SourceCodeNode.css"],
+    ["docs/app/css/main.css", "docs/app/css/img/node_class_big.png"],
+    ["docs/app/css/main.css", "docs/app/css/img/node_property_big.png"],
+    ["docs/app/css/main.css", "docs/app/css/img/node_property_big.png"],
+    ["docs/app/css/main.css", "docs/app/css/img/node_function_big.png"],
+    ["docs/app/css/main.css", "docs/app/css/img/node_function_big.png"],
+    ["docs/app/css/main.css", "docs/app/css/img/node_module_big.png"],
+    ["docs/app/css/main.css", "docs/app/css/img/node_const_big.png"],
+    ["docs/app/css/main.css", "docs/app/css/img/node_event.png"],
+    ["docs/app/css/main.css", "docs/app/css/img/tab_bg_bottom.png"],
+    ["docs/app/css/main.css", "docs/app/css/img/tab_bg_top.png"],
+    ["src/basis/ui/templates/button/Button.css", "src/basis/ui/templates/button/res/button_transparent_bg.png"],
+    ["src/basis/ui/templates/tree/Node.css", "src/basis/ui/templates/tree/res/page.gif"],
+    ["src/basis/ui/templates/tree/Node_Expander.css", "src/basis/ui/templates/tree/res/minus.gif"],
+    ["src/basis/ui/templates/tree/Node_Expander.css", "src/basis/ui/templates/tree/res/plus.gif"],
+    ["src/basis/ui/templates/tree/Folder.css", "src/basis/ui/templates/tree/res/folder_open.gif"],
+    ["src/basis/ui/templates/tree/Folder.css", "src/basis/ui/templates/tree/res/folder_close.gif"],
+    ["src/basis/ui/templates/popup/Balloon.css", "src/basis/ui/templates/popup/res/corners.png"],
+    ["src/basis/ui/templates/popup/Balloon.css", "src/basis/ui/templates/popup/res/tails.png"],
+    ["src/basis/ui/templates/popup/Balloon.css", "src/basis/ui/templates/popup/res/repeat-x.png"],
+    ["src/basis/ui/templates/popup/Balloon.css", "src/basis/ui/templates/popup/res/repeat-y.png"],
+    ["src/basis/ui/templates/menu/MenuItem.css", "src/basis/ui/templates/menu/res/overlay.png"],
+    ["src/basis/ui/templates/menu/MenuItem.css", "src/basis/ui/templates/menu/res/menuitem_selected_icon.gif"],
+    ["src/basis/ui/templates/table/Body.css", "src/basis/ui/templates/table/res/minus.gif"],
+    ["src/basis/ui/templates/table/Body.css", "src/basis/ui/templates/table/res/plus.gif"],
+    ["src/basis/ui/templates/table/HeaderCell.css", "src/basis/ui/templates/table/res/bg.gif"],
+    ["src/basis/ui/templates/table/HeaderCell.css", "src/basis/ui/templates/table/res/hline_left.gif"],
+    ["src/basis/ui/templates/table/HeaderCell.css", "src/basis/ui/templates/table/res/hline_right.gif"],
+    ["src/basis/ui/templates/table/HeaderCell.css", "src/basis/ui/templates/table/res/hover_bg.gif"],
+    ["src/basis/ui/templates/table/HeaderCell.css", "src/basis/ui/templates/table/res/hover_hline.gif"],
+    ["src/basis/ui/templates/table/HeaderCell.css", "src/basis/ui/templates/table/res/hover_hline.gif"],
+    ["src/basis/ui/templates/table/HeaderCell.css", "src/basis/ui/templates/table/res/selected_bg.gif"],
+    ["src/basis/ui/templates/table/HeaderCell.css", "src/basis/ui/templates/table/res/order_asc.gif"],
+    ["src/basis/ui/templates/table/HeaderCell.css", "src/basis/ui/templates/table/res/order_desc.gif"],
+    ["src/basis/ui/templates/table/FooterCell.css", "src/basis/ui/templates/table/res/footer_bg.gif"],
+    ["src/basis/ui/templates/scrolltable/ScrollTable.css", "src/basis/ui/templates/table/res/bg.gif"],
+    ["src/basis/ui/templates/scrolltable/ScrollTable.css", "src/basis/ui/templates/table/res/footer_bg.gif"],
+    ["src/basis/ui/templates/window/Blocker.css", "src/basis/ui/templates/window/res/mate_white.png"],
+    ["src/basis/ui/templates/window/Window.css", "src/basis/ui/templates/window/res/corners.png"],
+    ["src/basis/ui/templates/window/Window.css", "src/basis/ui/templates/window/res/repeat-x.png"],
+    ["src/basis/ui/templates/window/Window.css", "src/basis/ui/templates/window/res/repeat-y.png"],
+    ["src/basis/ui/templates/window/TitleButton.css", "src/basis/ui/templates/window/res/button_close.png"],
+    ["src/basis/ui/templates/tabs/Tab.css", "src/basis/ui/templates/tabs/res/not_active_border.gif"],
+    ["src/basis/ui/templates/tabs/Tab.css", "src/basis/ui/templates/tabs/res/not_active_bg.gif"],
+    ["src/basis/ui/templates/field/Combobox.css", "src/basis/ui/templates/field/res/dropdown_bg.gif"],
+    ["src/basis/ui/templates/field/Combobox.css", "src/basis/ui/templates/field/res/dropdown_arrow.gif"],
+    ["src/basis/ui/templates/field/Combobox.css", "src/basis/ui/templates/field/res/dropdown_gray_bg.gif"],
+    ["src/basis/ui/templates/slider/Slider.css", "src/basis/ui/templates/slider/res/slider.png"],
+    ["src/basis/ui/templates/paginator/Paginator.css", "src/basis/ui/templates/paginator/res/slider.png"]
+  ]
+}
