@@ -3,7 +3,7 @@
  */
 
 // TODO: rename all links to edges. Otherwise it's incositent
-var Viva = Viva || {};
+var Viva = {};
 
 Viva.Graph = Viva.Graph || {};
 Viva.Graph.version = '1.0.0.42';/*global Viva */
@@ -6414,3 +6414,5 @@ Viva.Graph.serializer = function () {
         }
     };
 };
+
+module.exports = Viva;

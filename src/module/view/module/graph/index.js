@@ -2,6 +2,7 @@ basis.require('basis.ui');
 basis.require('basis.timer');
 
 var type = resource('../../type.js').fetch();
+var Viva = resource('vivagraph.js').fetch();
 
 var GraphNode = basis.ui.Node.subclass({
   template: resource('template/node.tmpl'),
