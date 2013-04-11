@@ -6,7 +6,7 @@ var type = resource('type.js').fetch();
 //var details = resource('module/details/index.js').fetch();
 
 /*list.selection.addHandler({
-  datasetChanged: function(sender){
+  itemsChanged: function(sender){
     details.setDelegate(sender.pick());
   }
 }, details);*/

@@ -26,7 +26,7 @@ var view = new basis.ui.Node({
 
   listen: {
     selection: {
-      datasetChanged: function(selection){
+      itemsChanged: function(selection){
         this.updateBind('noSelected');
         type.matched.setSources(selection.getItems().map(function(node){
           return node.delegate;
@@ -46,7 +46,7 @@ var view = new basis.ui.Node({
     },
     listen: {
       delegate: {
-        datasetChanged: function(){
+        itemsChanged: function(){
           this.updateBind('count');
         }
       }
@@ -55,7 +55,7 @@ var view = new basis.ui.Node({
 });
 
 type.files.addHandler({
-  datasetChanged: function(){
+  itemsChanged: function(){
     view.updateBind('totalCount');
   }
 });

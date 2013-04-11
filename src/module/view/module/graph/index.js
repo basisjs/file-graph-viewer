@@ -119,7 +119,7 @@ var svgGraphics = new basis.ui.Node({
   },
   listen: {
     selection: {
-      datasetChanged: function(selection){
+      itemsChanged: function(selection){
         this.updateBind('hasSelected');
       }
     }
@@ -280,7 +280,7 @@ var svgGraphics = new basis.ui.Node({
 });
 
 type.matched.addHandler({
-  datasetChanged: function(matched, delta){
+  itemsChanged: function(matched, delta){
     svgGraphics.hasMatched = matched.itemCount > 0;
     svgGraphics.updateBind('hasMatched');
 
@@ -317,7 +317,7 @@ var speedSlider = new basis.ui.slider.Slider({
   });
 
   type.File.all.addHandler({
-    datasetChanged: function(dataset, delta){
+    itemsChanged: function(dataset, delta){
       if (delta.deleted)
         delta.deleted.forEach(function(file){
           graph.removeNode(file.getId());
@@ -326,7 +326,7 @@ var speedSlider = new basis.ui.slider.Slider({
   });
 
   type.FileLink.all.addHandler({
-    datasetChanged: function(dataset, delta){
+    itemsChanged: function(dataset, delta){
       if (delta.inserted)
       {
         delta.inserted.forEach(function(link){
