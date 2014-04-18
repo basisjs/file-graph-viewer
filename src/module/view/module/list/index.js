@@ -13,7 +13,7 @@
 
     sorting: 'data.name.toLowerCase()',
     grouping: {
-      groupGetter: 'data.isDir',
+      rule: 'data.isDir',
       sorting: 'data.title',
       sortingDesc: true,
       childClass: {
@@ -44,7 +44,7 @@
     dataSource: app.files.splitByParent.getSubset('', true),
     sorting: 'data.name.toLowerCase()',
     grouping: {
-      groupGetter: 'data.isDir',
+      rule: 'data.isDir',
       sorting: 'data.title',
       sortingDesc: true,
       childClass: {

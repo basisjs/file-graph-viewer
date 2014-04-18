@@ -1,22 +1,23 @@
-basis.require('basis.ui');
-basis.require('basis.data.dataset');
+require('basis.data.dataset');
+require('basis.data.index');
+require('basis.ui');
 
-var type = resource('../../type.js').fetch();
-
+var type = require('../../type.js');
+var countIndex = basis.data.index.count;
 var fileByType = new basis.data.dataset.Split({
   source: type.files,
   rule: 'data.type'
 });
 
-var view = new basis.ui.Node({
+module.exports = new basis.ui.Node({
   dataSource: fileByType,
 
-  template: resource('template/fileStat.tmpl'),
+  template: resource('./template/fileStat.tmpl'),
   binding: {
-    totalCount: function(){
-      return type.files.itemCount;
-    },
-    noSelected: 'selection.itemCount == 0'
+    totalCount: countIndex(type.files),
+    noSelected: function(node){
+      return countIndex(node.selection).as(basis.bool.invert);
+    }
   },
   action: {
     resetSelection: function(){
@@ -27,37 +28,23 @@ var view = new basis.ui.Node({
   listen: {
     selection: {
       itemsChanged: function(selection){
-        this.updateBind('noSelected');
-        type.matched.setSources(selection.getItems().map(function(node){
-          return node.delegate;
-        }));
+        var selected = selection.pick();
+        type.matched.setDataset(selected ? selected.delegate : null);
       }
     }
   },
 
   selection: true,
   childClass: {
-    template: resource('template/type.tmpl'),
+    template: resource('./template/type.tmpl'),
     binding: {
       type: 'data:title',
-      count: function(node){
-        return node.delegate && node.delegate.itemCount;
-      }
-    },
-    listen: {
-      delegate: {
-        itemsChanged: function(){
-          this.updateBind('count');
+      count: {
+        events: 'delegateChanged',
+        getter: function(node){
+          return node.delegate ? countIndex(node.delegate) : 0;
         }
       }
     }
   }
 });
-
-type.files.addHandler({
-  itemsChanged: function(){
-    view.updateBind('totalCount');
-  }
-});
-
-module.exports = view;

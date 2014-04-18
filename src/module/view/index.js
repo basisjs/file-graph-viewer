@@ -1,25 +1,16 @@
-basis.require('basis.ui');
+require('basis.ui');
 
-var type = resource('type.js').fetch();
-
-//var list = resource('module/list/index.js').fetch();
-//var details = resource('module/details/index.js').fetch();
-
-/*list.selection.addHandler({
-  itemsChanged: function(sender){
-    details.setDelegate(sender.pick());
-  }
-}, details);*/
+var type = require('./type.js');
 
 module.exports = new basis.ui.Node({
   dataType: type,
 
-  template: resource('template/view.tmpl'),
+  template: resource('./template/view.tmpl'),
   binding: {
     //list: list,
     //details: details,
-    fileStat: resource('module/fileStat/index.js').fetch(),
-    graph: resource('module/graph/index.js').fetch()
+    fileStat: require('./module/fileStat/index.js'),
+    graph: require('./module/graph/index.js')
   }
 });
 

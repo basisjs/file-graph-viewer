@@ -1,38 +1,24 @@
 basis.require('basis.entity');
 basis.require('basis.data.dataset');
 
-var File = new basis.entity.EntityType({
-  fields: {
-    filename: basis.entity.StringId,
-    isDir: Boolean,
-    type: String,
-    files: Object,
-    parent: {
-      calc: basis.entity.CalculateField('filename', function(filename){
-        var result = filename.replace(/\/[^\/]*$/, '');
-        return result != filename ? result : '';
-      })
-    },
-    name: {
-      calc: basis.entity.CalculateField('filename', function(filename){
-        return (filename || '').split(/\//).pop();
-      })
-    },
-    matched: Boolean
-  }
+var File = basis.entity.createType('File', {
+  filename: basis.entity.StringId,
+  isDir: Boolean,
+  type: String,
+  files: Object,
+  parent: basis.entity.calc('filename', function(filename){
+    var result = filename.replace(/\/[^\/]*$/, '');
+    return result != filename ? result : '';
+  }),
+  name: basis.entity.calc('filename', function(filename){
+    return (filename || '').split(/\//).pop();
+  }),
+  matched: Boolean
 });
 
-var FileLink = new basis.entity.EntityType({
-  fields: {
-    id: {
-      type: basis.entity.StringId,
-      calc: basis.entity.CalculateField('from', 'to', function(from, to){
-        return from + '->' + to;
-      })
-    },
-    from: String,
-    to: String
-  }
+var FileLink = basis.entity.createType('FileLink', {
+  from: basis.entity.StringId,
+  to: basis.entity.StringId
 });
 
 function loadMap(fileMap){
@@ -44,6 +30,7 @@ function loadMap(fileMap){
     var path = '';
     var name;
     var first = true;
+
     while (name = parts.shift())
     {
       path += (first ? '' : '/') + name;
@@ -57,13 +44,12 @@ function loadMap(fileMap){
   });
   File.all.sync(files);
 
-  fileMap.links.forEach(function(link){
-    return links.push({
+  FileLink.all.sync(fileMap.links.map(function(link){
+    return {
       from: link[0],
       to: link[1]
-    });
-  });
-  FileLink.all.sync(links);
+    };
+  }));
 }
 
 var fileDirSplit = new basis.data.dataset.Split({
@@ -88,7 +74,7 @@ var linkTo = new basis.data.dataset.Split({
   rule: 'data.from'
 });
 
-var matched = new basis.data.dataset.Merge();
+var matched = new basis.data.DatasetWrapper();
 
 module.exports = {
   loadMap: loadMap,

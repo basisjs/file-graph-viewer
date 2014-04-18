@@ -1,13 +1,19 @@
-basis.require('basis.timer');
-basis.require('basis.ui');
-basis.require('basis.ui.slider');
-basis.require('basis.ui.popup');
+require('basis.data.index');
+require('basis.ui');
+require('basis.ui.slider');
+require('basis.ui.popup');
 
-var type = resource('../../type.js').fetch();
-var Viva = resource('vivagraph.js').fetch();
+var type = require('../../type.js');
+var Viva = require('./vivagraph.js');
 
 var fileInfoPopup = new basis.ui.popup.Balloon({
-  template: resource('template/popup.tmpl'),
+  template: resource('./template/popup.tmpl'),
+  binding: {
+    filename: 'data:',
+    name: 'data:',
+    parent: 'data:'
+  },
+
   dir: 'center top center bottom',
   autorotate: true,
   handler: {
@@ -17,29 +23,24 @@ var fileInfoPopup = new basis.ui.popup.Balloon({
       else
         this.hide();
     }
-  },
-  childNodes: [
-    {
-      autoDelegate: true,
-      template: resource('template/fileInfo.tmpl'),
-      binding: {
-        filename: 'data:',
-        name: 'data:',
-        parent: 'data:'
-      }
-    }
-  ]
+  }
 });
+
+function coord(name){
+  return function(node){
+    return node[name] && node[name].toFixed(2);
+  }
+}
 
 var GraphNode = basis.ui.Node.subclass({
   matched: false,
 
-  template: resource('template/node.tmpl'),
+  template: resource('./template/node.tmpl'),
   binding: {
     type: 'data:',
-    matched: 'data:matched',
-    x: function(node){ return node.x && node.x.toFixed(2); },
-    y: function(node){ return node.y && node.y.toFixed(2); }
+    matched: 'data:',
+    x: coord('x'),
+    y: coord('y')
   },
   action: {
     hover: function(){
@@ -59,14 +60,13 @@ var GraphNode = basis.ui.Node.subclass({
 });
 
 var GraphLink = basis.ui.Node.subclass({
-  template: resource('template/link.tmpl'),
+  template: resource('./template/link.tmpl'),
   binding: {
-    x1: function(node){ return node.x1 && node.x1.toFixed(2); },
-    y1: function(node){ return node.y1 && node.y1.toFixed(2); },
-    x2: function(node){ return node.x2 && node.x2.toFixed(2); },
-    y2: function(node){ return node.y2 && node.y2.toFixed(2); }
+    x1: coord('x1'),
+    y1: coord('y1'),
+    x2: coord('x2'),
+    y2: coord('y2'),
   },
-
   updatePos: function(pos1, pos2){
     this.x1 = pos1.x;
     this.y1 = pos1.y;
@@ -84,44 +84,36 @@ var svgGraphics = new basis.ui.Node({
   actualScale: 1,
   offsetX: 0,
   offsetY: 0,
-  hasMatched: false,
 
-  // Called by Viva.Graph.View.renderer to let concrete graphic output
-  // provider prepare to render.
-  template: resource('template/graph.tmpl'),
+  template: resource('./template/graph.tmpl'),
   binding: {
     matrix: function(node){
-      return 'matrix(' + node.actualScale + ', 0, 0,' + node.actualScale + ',' + node.offsetX + ',' + node.offsetY + ')';
+      return 'matrix(' + [
+        node.actualScale, 0, 0,
+        node.actualScale, node.offsetX, node.offsetY
+      ] + ')';
     },
-    hasSelected: 'selection.itemCount > 0',
-    hasMatched: 'hasMatched'
+    hasMatched: basis.data.index.count(type.matched).as(Boolean),
+    hasSelected: function(node){
+      return basis.data.index.count(node.selection).as(Boolean);
+    }
   },
   action: {
     resetSelection: function(){
       this.selection.clear();
     }
   },
-  updateTransform: function(matrix){
-    this.updateBind('matrix');
-  },
 
   init: function (container) {
     basis.ui.Node.prototype.init.call(this);
-    this.init = function(){}
+    this.init = function(){} // ???
   },
 
   handler: {
     ownerChanged: function(){
-      setTimeout(function(){
+      basis.nextTick(function(){
         renderer.reset()
-      }, 0);
-    }
-  },
-  listen: {
-    selection: {
-      itemsChanged: function(selection){
-        this.updateBind('hasSelected');
-      }
+      });
     }
   },
 
@@ -129,7 +121,7 @@ var svgGraphics = new basis.ui.Node({
     multiple: true    
   },
   grouping: {
-    groupGetter: function(node){
+    rule: function(node){
       return node instanceof GraphNode;
     },
     sorting: 'data.id',
@@ -138,19 +130,16 @@ var svgGraphics = new basis.ui.Node({
     }
   },
 
+  childFactory: function(config){
+    var Class = config.delegate.data.filename ? GraphNode : GraphLink;
+    return new Class(config);
+  },
+
   //
   // node
   //
   node: function(graphNode){
-    var file = type.File.getSlot(graphNode.id);
-    var child = new GraphNode({
-      delegate: file
-    });
-
-    file.graphNode = child;
-    this.appendChild(child);
-
-    return child;
+    return this.appendChild(type.File.getSlot(graphNode.id));
   },
   initNode: function(){},
   updateNodePosition: function(node, pos) {
@@ -164,18 +153,10 @@ var svgGraphics = new basis.ui.Node({
   // link
   //
   link: function(graphNode){
-    var fileLink = type.FileLink.getSlot({
+    return this.appendChild(type.FileLink.getSlot({
       from: graphNode.fromId,
       to: graphNode.toId
-    });
-    var child = new GraphLink({
-      delegate: fileLink
-    });
-
-    fileLink.graphNode = child;
-    this.appendChild(child);
-        
-    return child;
+    }));
   },
   initLink: function(){},
   updateLinkPosition: function(node, fromPos, toPos){
@@ -189,29 +170,29 @@ var svgGraphics = new basis.ui.Node({
   // transformation
   //
 
+  updateTransform: function(matrix){
+    this.updateBind('matrix');
+  },
+
   // Sets translate operation that should be applied to all nodes and links.
-  graphCenterChanged: function (x, y) {
+  graphCenterChanged: function(x, y){
     this.offsetX = x;
     this.offsetY = y;
     this.updateTransform();
   },
 
   // Default input manager listens to DOM events to process nodes drag-n-drop
-  inputManager: function (graph, graphics) {
+  inputManager: function(graph, graphics){
     return {
-      bindDragNDrop: function (node, handlers) {
+      bindDragNDrop: function(node, handlers){
         if (handlers)
         {
           var events = Viva.Graph.Utils.dragndrop(node.ui.element);
-          if (typeof handlers.onStart === 'function') {
-            events.onStart(handlers.onStart);
-          }
-          if (typeof handlers.onDrag === 'function') {
-            events.onDrag(handlers.onDrag);
-          }
-          if (typeof handlers.onStop === 'function') {
-            events.onStop(handlers.onStop);
-          }
+          
+          ['onStart', 'onDrag', 'onStop'].forEach(function(name){
+            if (typeof handlers[name] === 'function')
+              events[name](handlers[name]);
+          });
 
           node.events = events;
         }
@@ -245,6 +226,7 @@ var svgGraphics = new basis.ui.Node({
     this.actualScale = t.a;
     this.offsetX = t.e;
     this.offsetY = t.f;
+
     this.updateTransform();
   },
 
@@ -256,8 +238,15 @@ var svgGraphics = new basis.ui.Node({
     p = p.matrixTransform(this.tmpl.transformElement.getCTM().inverse()); // translate to svg coordinates
 
     // Compute new scale matrix in current mouse position
-    var k = svgBase.createSVGMatrix().translate(p.x, p.y).scale(scaleFactor).translate(-p.x, -p.y);
-    var t = this.tmpl.transformElement.getCTM().multiply(k);
+    var t = this.tmpl.transformElement
+      .getCTM()
+      .multiply(
+        svgBase
+          .createSVGMatrix()
+          .translate(p.x, p.y)
+          .scale(scaleFactor)
+          .translate(-p.x, -p.y)
+      );
 
     this.actualScale = t.a;
     this.offsetX = t.e;
@@ -272,6 +261,7 @@ var svgGraphics = new basis.ui.Node({
     this.actualScale = 1;
     this.offsetX = 0;
     this.offsetY = 0;
+    
     this.updateTransform();
   },
 
@@ -281,9 +271,6 @@ var svgGraphics = new basis.ui.Node({
 
 type.matched.addHandler({
   itemsChanged: function(matched, delta){
-    svgGraphics.hasMatched = matched.itemCount > 0;
-    svgGraphics.updateBind('hasMatched');
-
     var array;
     if (array = delta.inserted)
       for (var i = 0, item; item = array[i]; i++)
@@ -296,7 +283,6 @@ type.matched.addHandler({
 })
 
 var graph = Viva.Graph.graph();
-
 var renderer = Viva.Graph.View.renderer(graph, {
   container: svgGraphics.element,
   graphics: svgGraphics,
@@ -328,18 +314,14 @@ var speedSlider = new basis.ui.slider.Slider({
   type.FileLink.all.addHandler({
     itemsChanged: function(dataset, delta){
       if (delta.inserted)
-      {
         delta.inserted.forEach(function(link){
           return links.push([link.data.from, link.data.to]);
         });
-      }
 
       if (delta.deleted)
-      {
         delta.deleted.forEach(function(link){
           graph.removeLink(link.data.from, link.data.to);
         });
-      }
     }
   });
 
@@ -366,9 +348,8 @@ var speedSlider = new basis.ui.slider.Slider({
 })();
 
 
-
 module.exports = new basis.ui.Node({
-  template: resource('template/view.tmpl'),
+  template: resource('./template/view.tmpl'),
   binding: {
     graph: svgGraphics,
     speedSlider: speedSlider

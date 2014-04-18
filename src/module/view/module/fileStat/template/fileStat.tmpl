@@ -1,9 +1,9 @@
-<b:style src="fileStat.css" />
+<b:style src="./fileStat.css" />
 
 <div class="file-stat file-stat-{noSelected}">
   <div class="header">File type statistics</div>
   <!--{childNodesHere}-->
-  <b:include src="type.tmpl">
+  <b:include src="./type.tmpl">
     <b:class value="file-type-all file-type-all-{noSelected}"/>
     <b:set-attr name="event-click" value="resetSelection"/>
     <b:replace ref="type">all files</b:replace>
