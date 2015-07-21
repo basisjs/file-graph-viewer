@@ -1,14 +1,13 @@
-require('basis.ui');
-
+var Node = require('basis.ui').Node;
 var type = require('./type.js');
 
-module.exports = new basis.ui.Node({
+module.exports = new Node({
   dataType: type,
 
   template: resource('./template/view.tmpl'),
   binding: {
     //list: list,
-    //details: details,
+    //details: require('./module/details/index.js'),
     fileStat: require('./module/fileStat/index.js'),
     graph: require('./module/graph/index.js')
   }

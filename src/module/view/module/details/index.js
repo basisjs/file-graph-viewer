@@ -1,65 +1,64 @@
+var Node = require('basis.ui').Node;
+var files = require('app.type');
 
-  basis.require('basis.ui');
-  basis.require('app.files');
+var FileView = Node.subclass({
+  autoDelegate: true,
+  handler: {
+    update: function(sender, delta){
+      if ('filename' in delta)
+        this.setDataSource(this.data.filename ? this.dataset.getSubset(this.data.filename, true) : null);
+    }
+  },
 
-  var FileView = basis.ui.Node.subclass({
-    autoDelegate: true,
-    handler: {
-      update: function(sender, delta){
-        if ('filename' in delta)
-          this.setDataSource(this.data.filename ? this.dataset.getSubset(this.data.filename, true) : null);
-      }
-    },
+  template: resource('templates/fileList.tmpl'),
+  binding: {
+    name: 'name'
+  },
 
-    template: resource('templates/fileList.tmpl'),
+  childClass: {
+    template: resource('templates/file.tmpl')
+  }
+});
+
+var linkToView = new FileView({
+  dataset: files.linkTo,
+  name: 'File reference to',
+
+  sorting: 'data.to',
+  childClass: {
     binding: {
-      name: 'name'
-    },
-
-    childClass: {
-      template: resource('templates/file.tmpl')
+      title: 'data:to'
     }
-  });
+  }
+});
 
-  var linkToView = new FileView({
-    dataset: app.files.linkTo,
-    name: 'File reference to',
+var linkFromView = new FileView({
+  dataset: files.linkFrom,
+  name: 'Referenced files',
 
-    sorting: 'data.to',
-    childClass: {
-      binding: {
-        title: 'data:to'
-      }
-    }
-  });
-
-  var linkFromView = new FileView({
-    dataset: app.files.linkFrom,
-    name: 'Referenced files',
-
-    sorting: 'data.from',
-    childClass: {
-      binding: {
-        title: 'data:from'
-      }
-    }
-  });
-
-  module.exports = new basis.ui.Node({
-    template: resource('templates/layout.tmpl'),
+  sorting: 'data.from',
+  childClass: {
     binding: {
-      filename: 'data:',
-      hasModel: {
-        events: 'delegateChanged',
-        getter: function(node){
-          return node.delegate ? 'hasModel' : '';
-        }
-      },
-      linkTo: 'satellite:',
-      linkFrom: 'satellite:'
-    },
-    satellite: {
-      linkTo: linkToView,
-      linkFrom: linkFromView
+      title: 'data:from'
     }
-  });
+  }
+});
+
+module.exports = new Node({
+  template: resource('templates/layout.tmpl'),
+  binding: {
+    filename: 'data:',
+    hasModel: {
+      events: 'delegateChanged',
+      getter: function(node){
+        return node.delegate ? 'hasModel' : '';
+      }
+    },
+    linkTo: 'satellite:',
+    linkFrom: 'satellite:'
+  },
+  satellite: {
+    linkTo: linkToView,
+    linkFrom: linkFromView
+  }
+});

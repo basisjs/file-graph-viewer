@@ -1,15 +1,15 @@
-.graph-file-info-popup
+.popup
 {
   pointer-events: none;
   opacity: .8;
 }
 
-.graph-file-info-popup__path
+.path
 {
   font-size: 80%;
   text-align: center;
 }
-.graph-file-info-popup__name
+.name
 {
   text-align: center;
   padding: 4px 0 2px;

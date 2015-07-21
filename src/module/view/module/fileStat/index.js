@@ -1,15 +1,14 @@
-require('basis.data.dataset');
-require('basis.data.index');
-require('basis.ui');
-
+var Split = require('basis.data.dataset').Split;
+var countIndex = require('basis.data.index').count;
+var Node = require('basis.ui').Node;
 var type = require('../../type.js');
-var countIndex = basis.data.index.count;
-var fileByType = new basis.data.dataset.Split({
+
+var fileByType = new Split({
   source: type.files,
   rule: 'data.type'
 });
 
-module.exports = new basis.ui.Node({
+module.exports = new Node({
   dataSource: fileByType,
 
   template: resource('./template/fileStat.tmpl'),

@@ -1,23 +1,23 @@
-  HTML,
-  BODY
-  {
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    overflow: hidden;
-  }
+HTML,
+BODY
+{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
 
-  BODY
-  {
-    color: black;
-    background: white;
-    font-family: verdana, serif;
-    font-size: small;
-    position: relative;
-  }
+BODY
+{
+  color: black;
+  background: white;
+  font-family: verdana, serif;
+  font-size: small;
+  position: relative;
+}
 
-  #layout
-  {
-    height: 100%;
-    position: relative;
-  }
+#layout
+{
+  height: 100%;
+  position: relative;
+}

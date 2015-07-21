@@ -1,4 +1,4 @@
-.file-type
+.type
 {
   padding: .25em 5px .35em;
   margin: 0 -5px 1px;
@@ -6,19 +6,19 @@
   border-radius: 3px;
   cursor: pointer;
 }
-.file-type:hover
+.type:hover
 {
   background: #444;
   background-color: rgba(0,0,0,.3);
 }
-.file-type_selected
+.selected
 {
   cursor: default;
   background: #444;
   background: rgba(0,0,0,.3);
 }
 
-.file-type-count
+.count
 {
   float: right;
   margin-left: 2ex;

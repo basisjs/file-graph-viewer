@@ -1,6 +1,7 @@
 <b:style src="fileList.css" />
+<b:isolate/>
 
-<div class="details-file-list details-file-list-{hasChildren}">
+<div class="details-file-list" b:show="{hasChildren}">
   <h3>{name}</h3>
   <ul{childNodesElement}/>
 </div>

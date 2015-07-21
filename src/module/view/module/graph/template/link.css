@@ -4,7 +4,3 @@
   stroke-width: 2px;
   marker-end: url(#graph-line-end);
 }
-#graph-line-end
-{
-  fill: #BBB;
-}

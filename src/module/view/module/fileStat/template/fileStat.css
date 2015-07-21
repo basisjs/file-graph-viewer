@@ -12,13 +12,13 @@
   font-size: 85%;
 }
 
-.file-stat .header
+.header
 {
   border-bottom: 1px solid white;
   margin-bottom: .25em;
 }
 
-.file-type-all-noSelected
+.file-type-all_noSelected
 {
   cursor: default;
   background: #444;

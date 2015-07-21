@@ -1,6 +1,8 @@
 <b:style src="./type.css" />
+<b:isolate/>
+<b:define name="selected" type="bool"/>
 
-<div class="file-type file-type_{selected}" event-click="select">
-  <span class="file-type-count">{count}</span>
-  <span class="file-type-title">{type}</span>
+<div class="type {selected}" event-click="select">
+  <span class="count">{count}</span>
+  {type}
 </div>

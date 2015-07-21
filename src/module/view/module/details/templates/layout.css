@@ -1,11 +1,4 @@
-
-  #details-layout
-  {
-    display: none;
-    margin: 2em;
-  }
-
-  #details-layout.hasModel
-  {
-    display: block;
-  }
+.details-layout
+{
+  margin: 2em;
+}

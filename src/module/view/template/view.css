@@ -1,10 +1,10 @@
-.file-graph-view
+.view
 {
   height: 100%;
   position: relative;
 }
 
-.file-graph-view__sidebar
+/*.file-graph-view__sidebar
 {
   position: absolute;
   z-index: 1000;
@@ -17,9 +17,9 @@
   background: white;
   background: rgba(255, 255, 255, .7);
   overflow: auto;
-}
+}*/
 
-.file-graph-view__content
+.content
 {
   overflow: hidden;
   height: 100%;

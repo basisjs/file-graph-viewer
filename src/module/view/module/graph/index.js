@@ -1,12 +1,11 @@
-require('basis.data.index');
-require('basis.ui');
-require('basis.ui.slider');
-require('basis.ui.popup');
-
+var Value = require('basis.data').Value;
+var Node = require('basis.ui').Node;
+var Slider = require('basis.ui.slider').Slider;
+var Balloon = require('basis.ui.popup').Balloon;
 var type = require('../../type.js');
 var Viva = require('./vivagraph.js');
 
-var fileInfoPopup = new basis.ui.popup.Balloon({
+var fileInfoPopup = new Balloon({
   template: resource('./template/popup.tmpl'),
   binding: {
     filename: 'data:',
@@ -32,15 +31,24 @@ function coord(name){
   }
 }
 
-var GraphNode = basis.ui.Node.subclass({
+var GraphNode = Node.subclass({
   matched: false,
 
   template: resource('./template/node.tmpl'),
   binding: {
-    type: 'data:',
-    matched: 'data:',
     x: coord('x'),
-    y: coord('y')
+    y: coord('y'),
+    type: 'data:',
+    matched: Value
+      .from(type.matched, 'itemsChanged', 'dataset')
+      .compute(function(node, dataset){
+        return !dataset || dataset.has(node.target);
+      }),
+    hasSelected: Value
+      .factory('parentChanged', 'parentNode')
+      .pipe('selectionChanged', 'selection')
+      .pipe('itemsChanged', 'itemCount')
+      .as(Boolean)
   },
   action: {
     hover: function(){
@@ -59,7 +67,7 @@ var GraphNode = basis.ui.Node.subclass({
   }
 });
 
-var GraphLink = basis.ui.Node.subclass({
+var GraphLink = Node.subclass({
   template: resource('./template/link.tmpl'),
   binding: {
     x1: coord('x1'),
@@ -80,7 +88,7 @@ var GraphLink = basis.ui.Node.subclass({
 });
 
 var svgBase = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-var svgGraphics = new basis.ui.Node({
+var svgGraphics = new Node({
   actualScale: 1,
   offsetX: 0,
   offsetY: 0,
@@ -92,10 +100,6 @@ var svgGraphics = new basis.ui.Node({
         node.actualScale, 0, 0,
         node.actualScale, node.offsetX, node.offsetY
       ] + ')';
-    },
-    hasMatched: basis.data.index.count(type.matched).as(Boolean),
-    hasSelected: function(node){
-      return basis.data.index.count(node.selection).as(Boolean);
     }
   },
   action: {
@@ -104,9 +108,9 @@ var svgGraphics = new basis.ui.Node({
     }
   },
 
-  init: function (container) {
-    basis.ui.Node.prototype.init.call(this);
-    this.init = function(){} // ???
+  init: function() {
+    Node.prototype.init.call(this);
+    this.init = function(){}; // otherwise Viva graph doesn't work
   },
 
   handler: {
@@ -170,7 +174,7 @@ var svgGraphics = new basis.ui.Node({
   // transformation
   //
 
-  updateTransform: function(matrix){
+  updateTransform: function(){
     this.updateBind('matrix');
   },
 
@@ -182,7 +186,7 @@ var svgGraphics = new basis.ui.Node({
   },
 
   // Default input manager listens to DOM events to process nodes drag-n-drop
-  inputManager: function(graph, graphics){
+  inputManager: function(){
     return {
       bindDragNDrop: function(node, handlers){
         if (handlers)
@@ -269,18 +273,6 @@ var svgGraphics = new basis.ui.Node({
   endRender: function(){}
 });
 
-type.matched.addHandler({
-  itemsChanged: function(matched, delta){
-    var array;
-    if (array = delta.inserted)
-      for (var i = 0, item; item = array[i]; i++)
-        item.set('matched', true);
-
-    if (array = delta.deleted)
-      for (var i = 0, item; item = array[i]; i++)
-        item.set('matched', false);
-  }
-})
 
 var graph = Viva.Graph.graph();
 var renderer = Viva.Graph.View.renderer(graph, {
@@ -290,7 +282,8 @@ var renderer = Viva.Graph.View.renderer(graph, {
 });
 renderer.run();
 
-var speedSlider = new basis.ui.slider.Slider({
+var speedSlider = new Slider({
+  template: resource('./template/slider.tmpl'),
   max: 100,
   step: 10,
   value: 30
@@ -325,7 +318,7 @@ var speedSlider = new basis.ui.slider.Slider({
     }
   });
 
-  var popNode = function(){
+  (function popNode(){
     if (links.length)
     {  
       var link;
@@ -343,12 +336,11 @@ var speedSlider = new basis.ui.slider.Slider({
       }
     }
     setTimeout(popNode, speedSlider.value);
-  };
-  popNode();
+  })();
 })();
 
 
-module.exports = new basis.ui.Node({
+module.exports = new Node({
   template: resource('./template/view.tmpl'),
   binding: {
     graph: svgGraphics,

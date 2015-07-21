@@ -1,7 +1,9 @@
 <b:style src="./popup.css"/>
-<b:include src="basis.ui.popup.Balloon" class="graph-file-info-popup">
+<b:isolate/>
+
+<b:include src="basis.ui.popup.Balloon" class="popup">
   <b:append ref="content">
-    <div class="graph-file-info-popup__path">{parent}</div>
-    <div class="graph-file-info-popup__name">{name}</div>
+    <div class="path">{parent}</div>
+    <div class="name">{name}</div>
   </b:append>
 </b:include>
